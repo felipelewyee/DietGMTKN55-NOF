@@ -1,0 +1,2064 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>GNOFm &#8212; DietGMTKN55-NOF</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'EP-030-GNOFm';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="GNOF" href="EP-030-GNOF.html" />
+    <link rel="prev" title="030" href="EP-030-All.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="DietGMTKN55-NOF - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="DietGMTKN55-NOF - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    DietGMTKN55-NOF
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Extended Pairing</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="EP-030-All.html">030</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">GNOFm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-030-GNOF.html">GNOF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-030-PNOF7.html">PNOF7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-030-PNOF7s.html">PNOF7s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-030-PNOF5.html">030-PNOF5</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Perfect Pairing</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="PP-030-All.html">030</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="PP-030-GNOFm.html">GNOFm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PP-030-GNOF.html">GNOF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PP-030-PNOF7.html">PNOF7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PP-030-PNOF7s.html">PNOF7s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PP-030-PNOF5.html">030-PNOF5</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FEP-030-GNOFm.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/EP-030-GNOFm.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>GNOFm</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-dipcs10">Set DIPCS10</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-7">System 7</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-fh51">Set FH51</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-24">System 24</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-30">System 30</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-cdie20">Set CDIE20</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-9">System 9</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bsr36">Set BSR36</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-31">System 31</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-aconf">Set ACONF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-10">System 10</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bh76">Set BH76</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-5">System 5</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-mb16-43">Set MB16-43</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">System 10</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-amino20x4">Set Amino20x4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-54">System 54</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-28">System 28</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bhrot27">Set BHROT27</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-16">System 16</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-26">System 26</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-sie4x4">Set SIE4x4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-15">System 15</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-hal59">Set HAL59</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-57">System 57</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-40">System 40</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-heavy28">Set HEAVY28</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">System 16</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-but14diol">Set BUT14DIOL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-13">System 13</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-dc13">Set DC13</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-1">System 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-g21ea">Set G21EA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-25">System 25</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-14">System 14</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bhperi">Set BHPERI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-11">System 11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-w4-11">Set W4-11</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">System 30</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-132">System 132</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">System 57</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-pnico23">Set PNICO23</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">System 16</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-mconf">Set MCONF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">System 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-px13">Set PX13</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">System 9</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-s66">Set S66</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-50">System 50</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-6">System 6</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-wcpt18">Set WCPT18</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">System 15</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="gnofm">
+<h1>GNOFm<a class="headerlink" href="#gnofm" title="Link to this heading">#</a></h1>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">    <style>
+        .bk-notebook-logo {
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNui8sowAAAOkSURBVDiNjZRtaJVlGMd/1/08zzln5zjP1LWcU9N0NkN8m2CYjpgQYQXqSs0I84OLIC0hkEKoPtiH3gmKoiJDU7QpLgoLjLIQCpEsNJ1vqUOdO7ppbuec5+V+rj4ctwzd8IIbbi6u+8f1539dt3A78eXC7QizUF7gyV1fD1Yqg4JWz84yffhm0qkFqBogB9rM8tZdtwVsPUhWhGcFJngGeWrPzHm5oaMmkfEg1usvLFyc8jLRqDOMru7AyC8saQr7GG7f5fvDeH7Ej8CM66nIF+8yngt6HWaKh7k49Soy9nXurCi1o3qUbS3zWfrYeQDTB/Qj6kX6Ybhw4B+bOYoLKCC9H3Nu/leUTZ1JdRWkkn2ldcCamzrcf47KKXdAJllSlxAOkRgyHsGC/zRday5Qld9DyoM4/q/rUoy/CXh3jzOu3bHUVZeU+DEn8FInkPBFlu3+nW3Nw0mk6vCDiWg8CeJaxEwuHS3+z5RgY+YBR6V1Z1nxSOfoaPa4LASWxxdNp+VWTk7+4vzaou8v8PN+xo+KY2xsw6une2frhw05CTYOmQvsEhjhWjn0bmXPjpE1+kplmmkP3suftwTubK9Vq22qKmrBhpY4jvd5afdRA3wGjFAgcnTK2s4hY0/GPNIb0nErGMCRxWOOX64Z8RAC4oCXdklmEvcL8o0BfkNK4lUg9HTl+oPlQxdNo3Mg4Nv175e/1LDGzZen30MEjRUtmXSfiTVu1kK8W4txyV6BMKlbgk3lMwYCiusNy9fVfvvwMxv8Ynl6vxoByANLTWplvuj/nF9m2+PDtt1eiHPBr1oIfhCChQMBw6Aw0UulqTKZdfVvfG7VcfIqLG9bcldL/+pdWTLxLUy8Qq38heUIjh4XlzZxzQm19lLFlr8vdQ97rjZVOLf8nclzckbcD4wxXMidpX30sFd37Fv/GtwwhzhxGVAprjbg0gCAEeIgwCZyTV2Z1REEW8O4py0wsjeloKoMr6iCY6dP92H6Vw/oTyICIthibxjm/DfN9lVz8IqtqKYLUXfoKVMVQVVJOElGjrnnUt9T9wbgp8AyYKaGlqingHZU/uG2NTZSVqwHQTWkx9hxjkpWDaCg6Ckj5qebgBVbT3V3NNXMSiWSDdGV3hrtzla7J+duwPOToIg42ChPQOQjspnSlp1V+Gjdged7+8UN5CRAV7a5EdFNwCjEaBR27b3W890TE7g24NAP/mMDXRWrGoFPQI9ls/MWO2dWFAar/xcOIImbbpA3zgAAAABJRU5ErkJggg==);
+        }
+    </style>
+    <div>
+        <a href="https://bokeh.org" target="_blank" class="bk-notebook-logo"></a>
+        <span id="c54432cc-ec8e-40d9-b6e8-21678591f6b2">Loading BokehJS ...</span>
+    </div>
+</div><script type="application/javascript">'use strict';
+(function(root) {
+  function now() {
+    return new Date();
+  }
+
+  const force = true;
+
+  if (typeof root._bokeh_onload_callbacks === "undefined" || force === true) {
+    root._bokeh_onload_callbacks = [];
+    root._bokeh_is_loading = undefined;
+  }
+
+const JS_MIME_TYPE = 'application/javascript';
+  const HTML_MIME_TYPE = 'text/html';
+  const EXEC_MIME_TYPE = 'application/vnd.bokehjs_exec.v0+json';
+  const CLASS_NAME = 'output_bokeh rendered_html';
+
+  /**
+   * Render data to the DOM node
+   */
+  function render(props, node) {
+    const script = document.createElement("script");
+    node.appendChild(script);
+  }
+
+  /**
+   * Handle when an output is cleared or removed
+   */
+  function handleClearOutput(event, handle) {
+    function drop(id) {
+      const view = Bokeh.index.get_by_id(id)
+      if (view != null) {
+        view.model.document.clear()
+        Bokeh.index.delete(view)
+      }
+    }
+
+    const cell = handle.cell;
+
+    const id = cell.output_area._bokeh_element_id;
+    const server_id = cell.output_area._bokeh_server_id;
+
+    // Clean up Bokeh references
+    if (id != null) {
+      drop(id)
+    }
+
+    if (server_id !== undefined) {
+      // Clean up Bokeh references
+      const cmd_clean = "from bokeh.io.state import curstate; print(curstate().uuid_to_server['" + server_id + "'].get_sessions()[0].document.roots[0]._id)";
+      cell.notebook.kernel.execute(cmd_clean, {
+        iopub: {
+          output: function(msg) {
+            const id = msg.content.text.trim()
+            drop(id)
+          }
+        }
+      });
+      // Destroy server and session
+      const cmd_destroy = "import bokeh.io.notebook as ion; ion.destroy_server('" + server_id + "')";
+      cell.notebook.kernel.execute(cmd_destroy);
+    }
+  }
+
+  /**
+   * Handle when a new output is added
+   */
+  function handleAddOutput(event, handle) {
+    const output_area = handle.output_area;
+    const output = handle.output;
+
+    // limit handleAddOutput to display_data with EXEC_MIME_TYPE content only
+    if ((output.output_type != "display_data") || (!Object.prototype.hasOwnProperty.call(output.data, EXEC_MIME_TYPE))) {
+      return
+    }
+
+    const toinsert = output_area.element.find("." + CLASS_NAME.split(' ')[0]);
+
+    if (output.metadata[EXEC_MIME_TYPE]["id"] !== undefined) {
+      toinsert[toinsert.length - 1].firstChild.textContent = output.data[JS_MIME_TYPE];
+      // store reference to embed id on output_area
+      output_area._bokeh_element_id = output.metadata[EXEC_MIME_TYPE]["id"];
+    }
+    if (output.metadata[EXEC_MIME_TYPE]["server_id"] !== undefined) {
+      const bk_div = document.createElement("div");
+      bk_div.innerHTML = output.data[HTML_MIME_TYPE];
+      const script_attrs = bk_div.children[0].attributes;
+      for (let i = 0; i < script_attrs.length; i++) {
+        toinsert[toinsert.length - 1].firstChild.setAttribute(script_attrs[i].name, script_attrs[i].value);
+        toinsert[toinsert.length - 1].firstChild.textContent = bk_div.children[0].textContent
+      }
+      // store reference to server id on output_area
+      output_area._bokeh_server_id = output.metadata[EXEC_MIME_TYPE]["server_id"];
+    }
+  }
+
+  function register_renderer(events, OutputArea) {
+
+    function append_mime(data, metadata, element) {
+      // create a DOM node to render to
+      const toinsert = this.create_output_subarea(
+        metadata,
+        CLASS_NAME,
+        EXEC_MIME_TYPE
+      );
+      this.keyboard_manager.register_events(toinsert);
+      // Render to node
+      const props = {data: data, metadata: metadata[EXEC_MIME_TYPE]};
+      render(props, toinsert[toinsert.length - 1]);
+      element.append(toinsert);
+      return toinsert
+    }
+
+    /* Handle when an output is cleared or removed */
+    events.on('clear_output.CodeCell', handleClearOutput);
+    events.on('delete.Cell', handleClearOutput);
+
+    /* Handle when a new output is added */
+    events.on('output_added.OutputArea', handleAddOutput);
+
+    /**
+     * Register the mime type and append_mime function with output_area
+     */
+    OutputArea.prototype.register_mime_type(EXEC_MIME_TYPE, append_mime, {
+      /* Is output safe? */
+      safe: true,
+      /* Index of renderer in `output_area.display_order` */
+      index: 0
+    });
+  }
+
+  // register the mime type if in Jupyter Notebook environment and previously unregistered
+  if (root.Jupyter !== undefined) {
+    const events = require('base/js/events');
+    const OutputArea = require('notebook/js/outputarea').OutputArea;
+
+    if (OutputArea.prototype.mime_types().indexOf(EXEC_MIME_TYPE) == -1) {
+      register_renderer(events, OutputArea);
+    }
+  }
+  if (typeof (root._bokeh_timeout) === "undefined" || force === true) {
+    root._bokeh_timeout = Date.now() + 5000;
+    root._bokeh_failed_load = false;
+  }
+
+  const NB_LOAD_WARNING = {'data': {'text/html':
+     "<div style='background-color: #fdd'>\n"+
+     "<p>\n"+
+     "BokehJS does not appear to have successfully loaded. If loading BokehJS from CDN, this \n"+
+     "may be due to a slow or bad network connection. Possible fixes:\n"+
+     "</p>\n"+
+     "<ul>\n"+
+     "<li>re-rerun `output_notebook()` to attempt to load from CDN again, or</li>\n"+
+     "<li>use INLINE resources instead, as so:</li>\n"+
+     "</ul>\n"+
+     "<code>\n"+
+     "from bokeh.resources import INLINE\n"+
+     "output_notebook(resources=INLINE)\n"+
+     "</code>\n"+
+     "</div>"}};
+
+  function display_loaded(error = null) {
+    const el = document.getElementById("c54432cc-ec8e-40d9-b6e8-21678591f6b2");
+    if (el != null) {
+      const html = (() => {
+        if (typeof root.Bokeh === "undefined") {
+          if (error == null) {
+            return "BokehJS is loading ...";
+          } else {
+            return "BokehJS failed to load.";
+          }
+        } else {
+          const prefix = `BokehJS ${root.Bokeh.version}`;
+          if (error == null) {
+            return `${prefix} successfully loaded.`;
+          } else {
+            return `${prefix} <b>encountered errors</b> while loading and may not function as expected.`;
+          }
+        }
+      })();
+      el.innerHTML = html;
+
+      if (error != null) {
+        const wrapper = document.createElement("div");
+        wrapper.style.overflow = "auto";
+        wrapper.style.height = "5em";
+        wrapper.style.resize = "vertical";
+        const content = document.createElement("div");
+        content.style.fontFamily = "monospace";
+        content.style.whiteSpace = "pre-wrap";
+        content.style.backgroundColor = "rgb(255, 221, 221)";
+        content.textContent = error.stack ?? error.toString();
+        wrapper.append(content);
+        el.append(wrapper);
+      }
+    } else if (Date.now() < root._bokeh_timeout) {
+      setTimeout(() => display_loaded(error), 100);
+    }
+  }
+
+  function run_callbacks() {
+    try {
+      root._bokeh_onload_callbacks.forEach(function(callback) {
+        if (callback != null)
+          callback();
+      });
+    } finally {
+      delete root._bokeh_onload_callbacks
+    }
+    console.debug("Bokeh: all callbacks have finished");
+  }
+
+  function load_libs(css_urls, js_urls, callback) {
+    if (css_urls == null) css_urls = [];
+    if (js_urls == null) js_urls = [];
+
+    root._bokeh_onload_callbacks.push(callback);
+    if (root._bokeh_is_loading > 0) {
+      console.debug("Bokeh: BokehJS is being loaded, scheduling callback at", now());
+      return null;
+    }
+    if (js_urls == null || js_urls.length === 0) {
+      run_callbacks();
+      return null;
+    }
+    console.debug("Bokeh: BokehJS not loaded, scheduling load and callback at", now());
+    root._bokeh_is_loading = css_urls.length + js_urls.length;
+
+    function on_load() {
+      root._bokeh_is_loading--;
+      if (root._bokeh_is_loading === 0) {
+        console.debug("Bokeh: all BokehJS libraries/stylesheets loaded");
+        run_callbacks()
+      }
+    }
+
+    function on_error(url) {
+      console.error("failed to load " + url);
+    }
+
+    for (let i = 0; i < css_urls.length; i++) {
+      const url = css_urls[i];
+      const element = document.createElement("link");
+      element.onload = on_load;
+      element.onerror = on_error.bind(null, url);
+      element.rel = "stylesheet";
+      element.type = "text/css";
+      element.href = url;
+      console.debug("Bokeh: injecting link tag for BokehJS stylesheet: ", url);
+      document.body.appendChild(element);
+    }
+
+    for (let i = 0; i < js_urls.length; i++) {
+      const url = js_urls[i];
+      const element = document.createElement('script');
+      element.onload = on_load;
+      element.onerror = on_error.bind(null, url);
+      element.async = false;
+      element.src = url;
+      console.debug("Bokeh: injecting script tag for BokehJS library: ", url);
+      document.head.appendChild(element);
+    }
+  };
+
+  function inject_raw_css(css) {
+    const element = document.createElement("style");
+    element.appendChild(document.createTextNode(css));
+    document.body.appendChild(element);
+  }
+
+  const js_urls = ["https://cdn.bokeh.org/bokeh/release/bokeh-3.6.2.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-gl-3.6.2.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-widgets-3.6.2.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-tables-3.6.2.min.js", "https://cdn.bokeh.org/bokeh/release/bokeh-mathjax-3.6.2.min.js"];
+  const css_urls = [];
+
+  const inline_js = [    function(Bokeh) {
+      Bokeh.set_log_level("info");
+    },
+function(Bokeh) {
+    }
+  ];
+
+  function run_inline_js() {
+    if (root.Bokeh !== undefined || force === true) {
+      try {
+            for (let i = 0; i < inline_js.length; i++) {
+      inline_js[i].call(root, root.Bokeh);
+    }
+
+      } catch (error) {display_loaded(error);throw error;
+      }if (force === true) {
+        display_loaded();
+      }} else if (Date.now() < root._bokeh_timeout) {
+      setTimeout(run_inline_js, 100);
+    } else if (!root._bokeh_failed_load) {
+      console.log("Bokeh: BokehJS failed to load within specified timeout.");
+      root._bokeh_failed_load = true;
+    } else if (force !== true) {
+      const cell = $(document.getElementById("c54432cc-ec8e-40d9-b6e8-21678591f6b2")).parents('.cell').data().cell;
+      cell.output_area.append_execute_result(NB_LOAD_WARNING)
+    }
+  }
+
+  if (root._bokeh_is_loading === 0) {
+    console.debug("Bokeh: BokehJS loaded, going straight to plotting");
+    run_inline_js();
+  } else {
+    load_libs(css_urls, js_urls, function() {
+      console.debug("Bokeh: BokehJS plotting callback run at", now());
+      run_inline_js();
+    });
+  }
+}(window));</script></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html">
+  <div id="efda75de-d7c5-4f5b-8254-2faa350899a4" data-root-id="p1004" style="display: contents;"></div>
+</div><script type="application/javascript">(function(root) {
+  function embed_document(root) {
+  const docs_json = {"22d6979e-f6ff-4bad-b4be-0a3a3d90b1dc":{"version":"3.6.2","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1004","attributes":{"height":400,"x_range":{"type":"object","name":"FactorRange","id":"p1014","attributes":{"factors":["DIPCS10","FH51","CDIE20","BSR36","ACONF","BH76","MB16-43","Amino20x4","BHROT27","SIE4x4","HAL59","HEAVY28","BUT14DIOL","DC13","G21EA","BHPERI","W4-11","PNICO23","MCONF","PX13","S66","WCPT18"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1006"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1015"},"y_scale":{"type":"object","name":"LinearScale","id":"p1016"},"title":{"type":"object","name":"Title","id":"p1007","attributes":{"text":"DietGMTKN55 030 GNOF Mean Absolute Deviation"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1047","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1001","attributes":{"selected":{"type":"object","name":"Selection","id":"p1002","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1003"},"data":{"type":"map","entries":[["subsets",["DIPCS10","FH51","CDIE20","BSR36","ACONF","BH76","MB16-43","Amino20x4","BHROT27","SIE4x4","HAL59","HEAVY28","BUT14DIOL","DC13","G21EA","BHPERI","W4-11","PNICO23","MCONF","PX13","S66","WCPT18"]],["counts",[4.925635390002299,1.9239013825067843,0.8410665499935019,10.080364529985925,0.8887696449903073,6.35938587499945,0.0,1.482212110016364,3.542205962472641,6.7473195099958225,0.0,0.0,2.2383754949963857,2.165037904987372,12.056441032512904,12.512639430015817,22.955793341658467,1.0837380700003796,0.2290597649842061,6.897597044997475,0.5057244824878857,11.61304841501164]],["description",["Double-ionisation potentials of closed-shell systems","Reaction energies in various (in-)organic systems","Double-bond isomerisation energies in cyclic systems","Bond-separation reactions of saturated hydrocarbons","Relative energies of alkane conformers","Barrier heights of hydrogen transfer, heavy atom transfer, nucleophilic substitution, unimolecular and association reactions","Decomposition energies of artificial molecules","Relative energies in amino acid conformers","Barrier heights for rotation around single bonds","Self-interaction-error related problems","Binding energies in halogenated dimers (incl. halogen bonds)","Noncovalent interaction energies between heavy element hydrides","Relative energies in butane-1,4-diol conformers","13 difficult cases for DFT methods","Adiabatic electron affinities","Barrier heights of pericyclic reactions","Total atomisation energies","Interaction energies in pnicogen-containing dimers","Relative energies in melatonin conformers","Proton-exchange barriers in H2O, NH3, and HF clusters","Binding energies of noncovalently bound dimers","Proton-transfer barriers in uncatalysed and water-catalysed reactions"]]]}}},"view":{"type":"object","name":"CDSView","id":"p1048","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1049"}}},"glyph":{"type":"object","name":"VBar","id":"p1044","attributes":{"x":{"type":"field","field":"subsets"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"field","field":"counts","transform":{"type":"object","name":"LinearColorMapper","id":"p1040","attributes":{"palette":["#00204C","#00204E","#002150","#002251","#002353","#002355","#002456","#002558","#00265A","#00265B","#00275D","#00285F","#002861","#002963","#002A64","#002A66","#002B68","#002C6A","#002D6C","#002D6D","#002E6E","#002E6F","#002F6F","#002F6F","#00306F","#00316F","#00316F","#00326E","#00336E","#00346E","#00346E","#01356E","#06366E","#0A376D","#0E376D","#12386D","#15396D","#17396D","#1A3A6C","#1C3B6C","#1E3C6C","#203C6C","#223D6C","#243E6C","#263E6C","#273F6C","#29406B","#2B416B","#2C416B","#2E426B","#2F436B","#31446B","#32446B","#33456B","#35466B","#36466B","#37476B","#38486B","#3A496B","#3B496B","#3C4A6B","#3D4B6B","#3E4B6B","#404C6B","#414D6B","#424E6B","#434E6B","#444F6B","#45506B","#46506B","#47516B","#48526B","#49536B","#4A536B","#4B546B","#4C556B","#4D556B","#4E566B","#4F576C","#50586C","#51586C","#52596C","#535A6C","#545A6C","#555B6C","#565C6C","#575D6D","#585D6D","#595E6D","#5A5F6D","#5B5F6D","#5C606D","#5D616E","#5E626E","#5F626E","#5F636E","#60646E","#61656F","#62656F","#63666F","#64676F","#65676F","#666870","#676970","#686A70","#686A70","#696B71","#6A6C71","#6B6D71","#6C6D72","#6D6E72","#6E6F72","#6F6F72","#6F7073","#707173","#717273","#727274","#737374","#747475","#757575","#757575","#767676","#777776","#787876","#797877","#7A7977","#7B7A77","#7B7B78","#7C7B78","#7D7C78","#7E7D78","#7F7E78","#807E78","#817F78","#828078","#838178","#848178","#858278","#868378","#878478","#888578","#898578","#8A8678","#8B8778","#8C8878","#8D8878","#8E8978","#8F8A78","#908B78","#918C78","#928C78","#938D78","#948E78","#958F78","#968F77","#979077","#989177","#999277","#9A9377","#9B9377","#9C9477","#9D9577","#9E9676","#9F9776","#A09876","#A19876","#A29976","#A39A75","#A49B75","#A59C75","#A69C75","#A79D75","#A89E74","#A99F74","#AAA074","#ABA174","#ACA173","#ADA273","#AEA373","#AFA473","#B0A572","#B1A672","#B2A672","#B4A771","#B5A871","#B6A971","#B7AA70","#B8AB70","#B9AB70","#BAAC6F","#BBAD6F","#BCAE6E","#BDAF6E","#BEB06E","#BFB16D","#C0B16D","#C1B26C","#C2B36C","#C3B46C","#C5B56B","#C6B66B","#C7B76A","#C8B86A","#C9B869","#CAB969","#CBBA68","#CCBB68","#CDBC67","#CEBD67","#D0BE66","#D1BF66","#D2C065","#D3C065","#D4C164","#D5C263","#D6C363","#D7C462","#D8C561","#D9C661","#DBC760","#DCC860","#DDC95F","#DECA5E","#DFCB5D","#E0CB5D","#E1CC5C","#E3CD5B","#E4CE5B","#E5CF5A","#E6D059","#E7D158","#E8D257","#E9D356","#EBD456","#ECD555","#EDD654","#EED753","#EFD852","#F0D951","#F1DA50","#F3DB4F","#F4DC4E","#F5DD4D","#F6DE4C","#F7DF4B","#F9E049","#FAE048","#FBE147","#FCE246","#FDE345","#FFE443","#FFE542","#FFE642","#FFE743","#FFE844","#FFE945"],"low":0.0,"high":22.955793341658467}}}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1045","attributes":{"x":{"type":"field","field":"subsets"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"counts","transform":{"id":"p1040"}},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1046","attributes":{"x":{"type":"field","field":"subsets"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"counts","transform":{"id":"p1040"}},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1013","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1027"},{"type":"object","name":"WheelZoomTool","id":"p1028","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1029","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1030","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p1036","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p1035","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"SaveTool","id":"p1037"},{"type":"object","name":"ResetTool","id":"p1038"},{"type":"object","name":"HelpTool","id":"p1039"},{"type":"object","name":"HoverTool","id":"p1050","attributes":{"renderers":"auto","tooltips":[["Description","@description"],["MAD","@counts"]]}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1022","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1023","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1024"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p1025"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1017","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1018"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1019"},"major_label_orientation":1.5707963267948966,"major_label_policy":{"type":"object","name":"AllLabels","id":"p1020"}}}],"center":[{"type":"object","name":"Grid","id":"p1021","attributes":{"axis":{"id":"p1017"}}},{"type":"object","name":"Grid","id":"p1026","attributes":{"dimension":1,"axis":{"id":"p1022"}}}]}}]}};
+  const render_items = [{"docid":"22d6979e-f6ff-4bad-b4be-0a3a3d90b1dc","roots":{"p1004":"efda75de-d7c5-4f5b-8254-2faa350899a4"},"root_ids":["p1004"]}];
+  void root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
+  }
+  if (root.Bokeh !== undefined) {
+    embed_document(root);
+  } else {
+    let attempts = 0;
+    const timer = setInterval(function(root) {
+      if (root.Bokeh !== undefined) {
+        clearInterval(timer);
+        embed_document(root);
+      } else {
+        attempts++;
+        if (attempts > 100) {
+          clearInterval(timer);
+          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+        }
+      }
+    }, 10, root)
+  }
+})(window);</script></div>
+</div>
+<section id="set-dipcs10">
+<h2>Set DIPCS10<a class="headerlink" href="#set-dipcs10" title="Link to this heading">#</a></h2>
+<section id="system-7">
+<h3>System 7<a class="headerlink" href="#system-7" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 733.000</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 728.074   AD: 4.9    Weight: 0.1  Contrib: 0.0</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>h2s</p></td>
+<td><p>-1</p></td>
+<td><p>-399.0741</p></td>
+<td><p><img alt="Not Available" src="_images/DIPCS10-h2s.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>h2s_2+</p></td>
+<td><p>1</p></td>
+<td><p>-397.9131</p></td>
+<td><p><img alt="Not Available" src="_images/DIPCS10-h2s_2%2B.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-fh51">
+<h2>Set FH51<a class="headerlink" href="#set-fh51" title="Link to this heading">#</a></h2>
+<section id="system-24">
+<h3>System 24<a class="headerlink" href="#system-24" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: -22.450</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: -23.775   AD: 1.3    Weight: 1.8  Contrib: 0.1</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>H2O</p></td>
+<td><p>-1</p></td>
+<td><p>-76.3506</p></td>
+<td><p><img alt="Not Available" src="_images/FH51-H2O.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>dimethyloxirane</p></td>
+<td><p>-1</p></td>
+<td><p>-232.1234</p></td>
+<td><p><img alt="Not Available" src="_images/FH51-dimethyloxirane.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>butanediol</p></td>
+<td><p>1</p></td>
+<td><p>-308.5119</p></td>
+<td><p><img alt="Not Available" src="_images/FH51-butanediol.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="system-30">
+<h3>System 30<a class="headerlink" href="#system-30" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: -16.980</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: -19.503   AD: 2.5    Weight: 1.8  Contrib: 0.2</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>C3H7NH2</p></td>
+<td><p>1</p></td>
+<td><p>-174.2381</p></td>
+<td><p><img alt="Not Available" src="_images/FH51-C3H7NH2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>H2O</p></td>
+<td><p>-1</p></td>
+<td><p>-76.3506</p></td>
+<td><p><img alt="Not Available" src="_images/FH51-H2O.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>CO2</p></td>
+<td><p>1</p></td>
+<td><p>-188.3818</p></td>
+<td><p><img alt="Not Available" src="_images/FH51-CO2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>C3H7NCO</p></td>
+<td><p>-1</p></td>
+<td><p>-286.2383</p></td>
+<td><p><img alt="Not Available" src="_images/FH51-C3H7NCO.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-cdie20">
+<h2>Set CDIE20<a class="headerlink" href="#set-cdie20" title="Link to this heading">#</a></h2>
+<section id="system-9">
+<h3>System 9<a class="headerlink" href="#system-9" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 2.900</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 2.059   AD: 0.8    Weight: 14.0  Contrib: 0.4</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>P43</p></td>
+<td><p>1</p></td>
+<td><p>-233.0145</p></td>
+<td><p><img alt="Not Available" src="_images/CDIE20-P43.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>R43</p></td>
+<td><p>-1</p></td>
+<td><p>-233.0178</p></td>
+<td><p><img alt="Not Available" src="_images/CDIE20-R43.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-bsr36">
+<h2>Set BSR36<a class="headerlink" href="#set-bsr36" title="Link to this heading">#</a></h2>
+<section id="system-31">
+<h3>System 31<a class="headerlink" href="#system-31" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 24.960</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 14.880   AD: 10.1    Weight: 3.5  Contrib: 1.2</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ch4</p></td>
+<td><p>-12</p></td>
+<td><p>-40.4508</p></td>
+<td><p><img alt="Not Available" src="_images/BSR36-ch4.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>c2h6</p></td>
+<td><p>12</p></td>
+<td><p>-79.7024</p></td>
+<td><p><img alt="Not Available" src="_images/BSR36-c2h6.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>r16</p></td>
+<td><p>-1</p></td>
+<td><p>-471.0433</p></td>
+<td><p><img alt="Not Available" src="_images/BSR36-r16.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-aconf">
+<h2>Set ACONF<a class="headerlink" href="#set-aconf" title="Link to this heading">#</a></h2>
+<section id="system-10">
+<h3>System 10<a class="headerlink" href="#system-10" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 1.250</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 2.139   AD: 0.9    Weight: 31.0  Contrib: 0.9</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>H_ggg</p></td>
+<td><p>1</p></td>
+<td><p>-236.7156</p></td>
+<td><p><img alt="Not Available" src="_images/ACONF-H_ggg.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>H_ttt</p></td>
+<td><p>-1</p></td>
+<td><p>-236.7190</p></td>
+<td><p><img alt="Not Available" src="_images/ACONF-H_ttt.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-bh76">
+<h2>Set BH76<a class="headerlink" href="#set-bh76" title="Link to this heading">#</a></h2>
+<section id="system-5">
+<h3>System 5<a class="headerlink" href="#system-5" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 17.800</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 24.159   AD: 6.4    Weight: 3.0  Contrib: 0.6</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>hcl</p></td>
+<td><p>-1</p></td>
+<td><p>-460.4875</p></td>
+<td><p><img alt="Not Available" src="_images/BH76-hcl.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>hclhts</p></td>
+<td><p>1</p></td>
+<td><p>-460.9490</p></td>
+<td><p><img alt="Not Available" src="_images/BH76-hclhts.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>h</p></td>
+<td><p>-1</p></td>
+<td><p>-0.5000</p></td>
+<td><p><img alt="Not Available" src="fig/030/BH76-h.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-mb16-43">
+<h2>Set MB16-43<a class="headerlink" href="#set-mb16-43" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>System 10<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 46.307</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: -27.356   AD: 73.7    Weight: 0.1  Contrib: 0.3</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>H2</p></td>
+<td><p>-14</p></td>
+<td><p>-1.1688</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-H2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>BH3</p></td>
+<td><p>2</p></td>
+<td><p>-26.5587</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-BH3.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>CH4</p></td>
+<td><p>6</p></td>
+<td><p>-40.4507</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-CH4.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>-2</p></td>
+<td><p>-1246.5043</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-10.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>MgH2</p></td>
+<td><p>2</p></td>
+<td><p>-200.9892</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-MgH2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>F2</p></td>
+<td><p>1</p></td>
+<td><p>-199.3518</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-F2.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>Cl2</p></td>
+<td><p>1</p></td>
+<td><p>-919.7227</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-Cl2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>SiH4</p></td>
+<td><p>2</p></td>
+<td><p>-291.5660</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-SiH4.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>N2</p></td>
+<td><p>1</p></td>
+<td><p>-109.4096</p></td>
+<td><p><img alt="Not Available" src="_images/MB16-43-N2.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-amino20x4">
+<h2>Set Amino20x4<a class="headerlink" href="#set-amino20x4" title="Link to this heading">#</a></h2>
+<section id="system-54">
+<h3>System 54<a class="headerlink" href="#system-54" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 1.719</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 2.614   AD: 0.9    Weight: 23.3  Contrib: 0.7</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>PHE_xar</p></td>
+<td><p>1</p></td>
+<td><p>-725.9243</p></td>
+<td><p><img alt="Not Available" src="_images/Amino20x4-PHE_xar.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>PHE_xaw</p></td>
+<td><p>-1</p></td>
+<td><p>-725.9285</p></td>
+<td><p><img alt="Not Available" src="_images/Amino20x4-PHE_xaw.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="system-28">
+<h3>System 28<a class="headerlink" href="#system-28" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 5.216</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 3.146   AD: 2.1    Weight: 23.3  Contrib: 1.6</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>GLU_xbi</p></td>
+<td><p>-1</p></td>
+<td><p>-722.8716</p></td>
+<td><p><img alt="Not Available" src="_images/Amino20x4-GLU_xbi.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>GLU_xad</p></td>
+<td><p>1</p></td>
+<td><p>-722.8666</p></td>
+<td><p><img alt="Not Available" src="_images/Amino20x4-GLU_xad.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-bhrot27">
+<h2>Set BHROT27<a class="headerlink" href="#set-bhrot27" title="Link to this heading">#</a></h2>
+<section id="system-16">
+<h3>System 16<a class="headerlink" href="#system-16" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 14.520</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 13.345   AD: 1.2    Weight: 9.1  Contrib: 0.4</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>acetamide_TS2</p></td>
+<td><p>1</p></td>
+<td><p>-208.9402</p></td>
+<td><p><img alt="Not Available" src="_images/BHROT27-acetamide_TS2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>acetamide_RC</p></td>
+<td><p>-1</p></td>
+<td><p>-208.9615</p></td>
+<td><p><img alt="Not Available" src="_images/BHROT27-acetamide_RC.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="system-26">
+<h3>System 26<a class="headerlink" href="#system-26" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 17.200</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 23.110   AD: 5.9    Weight: 9.1  Contrib: 1.8</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ethylthiourea_180</p></td>
+<td><p>-1</p></td>
+<td><p>-626.2196</p></td>
+<td><p><img alt="Not Available" src="_images/BHROT27-ethylthiourea_180.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>ethylthiourea_TS2</p></td>
+<td><p>1</p></td>
+<td><p>-626.1827</p></td>
+<td><p><img alt="Not Available" src="_images/BHROT27-ethylthiourea_TS2.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-sie4x4">
+<h2>Set SIE4x4<a class="headerlink" href="#set-sie4x4" title="Link to this heading">#</a></h2>
+<section id="system-15">
+<h3>System 15<a class="headerlink" href="#system-15" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 16.900</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 10.153   AD: 6.7    Weight: 1.7  Contrib: 0.4</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>h2o2+_1.5</p></td>
+<td><p>-1</p></td>
+<td><p>-152.2766</p></td>
+<td><p><img alt="Not Available" src="_images/SIE4x4-h2o2%2B_1.5.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>h2o+</p></td>
+<td><p>1</p></td>
+<td><p>-75.9085</p></td>
+<td><p><img alt="Not Available" src="_images/SIE4x4-h2o%2B.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>h2o</p></td>
+<td><p>1</p></td>
+<td><p>-76.3519</p></td>
+<td><p><img alt="Not Available" src="_images/SIE4x4-h2o.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-hal59">
+<h2>Set HAL59<a class="headerlink" href="#set-hal59" title="Link to this heading">#</a></h2>
+<section id="system-57">
+<h3>System 57<a class="headerlink" href="#system-57" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 2.480</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 555.999   AD: 553.5    Weight: 12.4  Contrib: 228.4</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>28_CH3I-benB</p></td>
+<td><p>1</p></td>
+<td><p>-2736.2799</p></td>
+<td><p><img alt="Not Available" src="_images/HAL59-28_CH3I-benB.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>28_CH3I-benAB</p></td>
+<td><p>-1</p></td>
+<td><p>-2969.0481</p></td>
+<td><p><img alt="Not Available" src="_images/HAL59-28_CH3I-benAB.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>28_CH3I-benA</p></td>
+<td><p>1</p></td>
+<td><p>-231.8816</p></td>
+<td><p><img alt="Not Available" src="_images/HAL59-28_CH3I-benA.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="system-40">
+<h3>System 40<a class="headerlink" href="#system-40" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 3.340</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 350.163   AD: 346.8    Weight: 12.4  Contrib: 143.1</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>MeI</p></td>
+<td><p>1</p></td>
+<td><p>-2736.2612</p></td>
+<td><p><img alt="Not Available" src="_images/HAL59-MeI.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>OPH3</p></td>
+<td><p>1</p></td>
+<td><p>-417.9972</p></td>
+<td><p><img alt="Not Available" src="_images/HAL59-OPH3.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>MeI_OPH3</p></td>
+<td><p>-1</p></td>
+<td><p>-3154.8168</p></td>
+<td><p><img alt="Not Available" src="_images/HAL59-MeI_OPH3.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-heavy28">
+<h2>Set HEAVY28<a class="headerlink" href="#set-heavy28" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>System 16<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 1.570</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 356.618   AD: 355.0    Weight: 45.8  Contrib: 541.9</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>h2o</p></td>
+<td><p>1</p></td>
+<td><p>-76.3508</p></td>
+<td><p><img alt="Not Available" src="_images/HEAVY28-h2o.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>sbh3_h2o</p></td>
+<td><p>-1</p></td>
+<td><p>-2496.5622</p></td>
+<td><p><img alt="Not Available" src="_images/HEAVY28-sbh3_h2o.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>sbh3</p></td>
+<td><p>1</p></td>
+<td><p>-2419.6428</p></td>
+<td><p><img alt="Not Available" src="_images/HEAVY28-sbh3.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-but14diol">
+<h2>Set BUT14DIOL<a class="headerlink" href="#set-but14diol" title="Link to this heading">#</a></h2>
+<section id="system-13">
+<h3>System 13<a class="headerlink" href="#system-13" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 2.220</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: -0.018   AD: 2.2    Weight: 20.3  Contrib: 1.5</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>B14</p></td>
+<td><p>1</p></td>
+<td><p>-308.5050</p></td>
+<td><p><img alt="Not Available" src="_images/BUT14DIOL-B14.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>B1</p></td>
+<td><p>-1</p></td>
+<td><p>-308.5050</p></td>
+<td><p><img alt="Not Available" src="_images/BUT14DIOL-B1.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-dc13">
+<h2>Set DC13<a class="headerlink" href="#set-dc13" title="Link to this heading">#</a></h2>
+<section id="system-1">
+<h3>System 1<a class="headerlink" href="#system-1" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: -1.000</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: -3.165   AD: 2.2    Weight: 1.0  Contrib: 0.1</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>ISO_E36</p></td>
+<td><p>1</p></td>
+<td><p>-323.0870</p></td>
+<td><p><img alt="Not Available" src="_images/DC13-ISO_E36.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>ISO_P36</p></td>
+<td><p>-1</p></td>
+<td><p>-323.0820</p></td>
+<td><p><img alt="Not Available" src="_images/DC13-ISO_P36.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-g21ea">
+<h2>Set G21EA<a class="headerlink" href="#set-g21ea" title="Link to this heading">#</a></h2>
+<section id="system-25">
+<h3>System 25<a class="headerlink" href="#system-25" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 54.700</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 41.304   AD: 13.4    Weight: 1.7  Contrib: 0.8</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>EA_25n</p></td>
+<td><p>1</p></td>
+<td><p>-919.7214</p></td>
+<td><p><img alt="Not Available" src="_images/G21EA-EA_25n.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>EA_25</p></td>
+<td><p>-1</p></td>
+<td><p>-919.7873</p></td>
+<td><p><img alt="Not Available" src="_images/G21EA-EA_25.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="system-14">
+<h3>System 14<a class="headerlink" href="#system-14" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 29.300</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 18.583   AD: 10.7    Weight: 1.7  Contrib: 0.6</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>EA_14n</p></td>
+<td><p>1</p></td>
+<td><p>-289.6530</p></td>
+<td><p><img alt="Not Available" src="_images/G21EA-EA_14n.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>EA_14</p></td>
+<td><p>-1</p></td>
+<td><p>-289.6827</p></td>
+<td><p><img alt="Not Available" src="_images/G21EA-EA_14.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-bhperi">
+<h2>Set BHPERI<a class="headerlink" href="#set-bhperi" title="Link to this heading">#</a></h2>
+<section id="system-11">
+<h3>System 11<a class="headerlink" href="#system-11" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 27.600</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 40.113   AD: 12.5    Weight: 2.7  Contrib: 1.1</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>13ts_1a</p></td>
+<td><p>1</p></td>
+<td><p>-262.8584</p></td>
+<td><p><img alt="Not Available" src="_images/BHPERI-13ts_1a.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>13r_1</p></td>
+<td><p>-1</p></td>
+<td><p>-184.4576</p></td>
+<td><p><img alt="Not Available" src="_images/BHPERI-13r_1.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>13_c2h4</p></td>
+<td><p>-1</p></td>
+<td><p>-78.4647</p></td>
+<td><p><img alt="Not Available" src="_images/BHPERI-13_c2h4.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-w4-11">
+<h2>Set W4-11<a class="headerlink" href="#set-w4-11" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>System 30<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 107.499</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 114.083   AD: 6.6    Weight: 0.2  Contrib: 0.0</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>hcl</p></td>
+<td><p>-1</p></td>
+<td><p>-460.4880</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-hcl.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>cl</p></td>
+<td><p>1</p></td>
+<td><p>-459.8061</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-cl.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>h</p></td>
+<td><p>1</p></td>
+<td><p>-0.5000</p></td>
+<td><p><img alt="Not Available" src="fig/030/W4-11-h.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="system-132">
+<h3>System 132<a class="headerlink" href="#system-132" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 128.120</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 85.794   AD: 42.3    Weight: 0.2  Contrib: 0.3</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>oclo</p></td>
+<td><p>-1</p></td>
+<td><p>-609.9731</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-oclo.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>cl</p></td>
+<td><p>1</p></td>
+<td><p>-459.8061</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-cl.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>o</p></td>
+<td><p>2</p></td>
+<td><p>-75.0151</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-o.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="id4">
+<h3>System 57<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 182.517</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 162.560   AD: 20.0    Weight: 0.2  Contrib: 0.1</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>f</p></td>
+<td><p>1</p></td>
+<td><p>-99.6597</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-f.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>b</p></td>
+<td><p>1</p></td>
+<td><p>-24.6244</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-b.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>bf</p></td>
+<td><p>-1</p></td>
+<td><p>-124.5433</p></td>
+<td><p><img alt="Not Available" src="_images/W4-11-bf.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-pnico23">
+<h2>Set PNICO23<a class="headerlink" href="#set-pnico23" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h3>System 16<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 1.780</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 0.696   AD: 1.1    Weight: 13.3  Contrib: 0.5</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>16</p></td>
+<td><p>-1</p></td>
+<td><p>-399.3109</p></td>
+<td><p><img alt="Not Available" src="_images/PNICO23-16.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>16b</p></td>
+<td><p>1</p></td>
+<td><p>-342.8230</p></td>
+<td><p><img alt="Not Available" src="_images/PNICO23-16b.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>16a</p></td>
+<td><p>1</p></td>
+<td><p>-56.4869</p></td>
+<td><p><img alt="Not Available" src="_images/PNICO23-16a.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-mconf">
+<h2>Set MCONF<a class="headerlink" href="#set-mconf" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h3>System 1<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 0.390</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 0.619   AD: 0.2    Weight: 11.4  Contrib: 0.1</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>2</p></td>
+<td><p>1</p></td>
+<td><p>-763.9501</p></td>
+<td><p><img alt="Not Available" src="_images/MCONF-2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>-1</p></td>
+<td><p>-763.9510</p></td>
+<td><p><img alt="Not Available" src="_images/MCONF-1.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-px13">
+<h2>Set PX13<a class="headerlink" href="#set-px13" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h3>System 9<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 42.300</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 49.198   AD: 6.9    Weight: 1.7  Contrib: 0.4</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>hf_2</p></td>
+<td><p>-1</p></td>
+<td><p>-200.7370</p></td>
+<td><p><img alt="Not Available" src="_images/PX13-hf_2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>hf_2_ts</p></td>
+<td><p>1</p></td>
+<td><p>-200.6586</p></td>
+<td><p><img alt="Not Available" src="_images/PX13-hf_2_ts.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-s66">
+<h2>Set S66<a class="headerlink" href="#set-s66" title="Link to this heading">#</a></h2>
+<section id="system-50">
+<h3>System 50<a class="headerlink" href="#system-50" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 2.870</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 2.601   AD: 0.3    Weight: 10.4  Contrib: 0.1</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>50</p></td>
+<td><p>-1</p></td>
+<td><p>-309.0943</p></td>
+<td><p><img alt="Not Available" src="_images/S66-50.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>50B</p></td>
+<td><p>1</p></td>
+<td><p>-77.2074</p></td>
+<td><p><img alt="Not Available" src="_images/S66-50B.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>50A</p></td>
+<td><p>1</p></td>
+<td><p>-231.8827</p></td>
+<td><p><img alt="Not Available" src="_images/S66-50A.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="system-6">
+<h3>System 6<a class="headerlink" href="#system-6" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 7.550</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 8.293   AD: 0.7    Weight: 10.4  Contrib: 0.3</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>6</p></td>
+<td><p>-1</p></td>
+<td><p>-211.3294</p></td>
+<td><p><img alt="Not Available" src="_images/S66-6.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>06A</p></td>
+<td><p>1</p></td>
+<td><p>-115.5877</p></td>
+<td><p><img alt="Not Available" src="_images/S66-06A.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>06B</p></td>
+<td><p>1</p></td>
+<td><p>-95.7285</p></td>
+<td><p><img alt="Not Available" src="_images/S66-06B.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="set-wcpt18">
+<h2>Set WCPT18<a class="headerlink" href="#set-wcpt18" title="Link to this heading">#</a></h2>
+<section id="id8">
+<h3>System 15<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{ref}\)</span>: 59.630</p>
+<p><span class="math notranslate nohighlight">\(\Delta E_\text{NOF}\)</span>: 71.243   AD: 11.6    Weight: 1.6  Contrib: 0.6</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Molecule Label</p></th>
+<th class="head"><p>Stechiometry</p></th>
+<th class="head"><p>Energy</p></th>
+<th class="head"><p>Draw</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>h2o</p></td>
+<td><p>-1</p></td>
+<td><p>-76.3520</p></td>
+<td><p><img alt="Not Available" src="_images/WCPT18-h2o.png" /></p></td>
+</tr>
+<tr class="row-odd"><td><p>ts6h2o</p></td>
+<td><p>1</p></td>
+<td><p>-193.9613</p></td>
+<td><p><img alt="Not Available" src="_images/WCPT18-ts6h2o.png" /></p></td>
+</tr>
+<tr class="row-even"><td><p>reac6</p></td>
+<td><p>-1</p></td>
+<td><p>-117.7229</p></td>
+<td><p><img alt="Not Available" src="_images/WCPT18-reac6.png" /></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="EP-030-All.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">030</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="EP-030-GNOF.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">GNOF</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-dipcs10">Set DIPCS10</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-7">System 7</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-fh51">Set FH51</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-24">System 24</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-30">System 30</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-cdie20">Set CDIE20</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-9">System 9</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bsr36">Set BSR36</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-31">System 31</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-aconf">Set ACONF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-10">System 10</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bh76">Set BH76</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-5">System 5</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-mb16-43">Set MB16-43</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">System 10</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-amino20x4">Set Amino20x4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-54">System 54</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-28">System 28</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bhrot27">Set BHROT27</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-16">System 16</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-26">System 26</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-sie4x4">Set SIE4x4</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-15">System 15</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-hal59">Set HAL59</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-57">System 57</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-40">System 40</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-heavy28">Set HEAVY28</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">System 16</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-but14diol">Set BUT14DIOL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-13">System 13</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-dc13">Set DC13</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-1">System 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-g21ea">Set G21EA</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-25">System 25</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-14">System 14</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-bhperi">Set BHPERI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-11">System 11</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-w4-11">Set W4-11</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">System 30</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-132">System 132</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">System 57</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-pnico23">Set PNICO23</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">System 16</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-mconf">Set MCONF</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">System 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-px13">Set PX13</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">System 9</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-s66">Set S66</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-50">System 50</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#system-6">System 6</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#set-wcpt18">Set WCPT18</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">System 15</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Juan Felipe Huan Lew-Yee, Ion Mitxelena, Mario Piris
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
