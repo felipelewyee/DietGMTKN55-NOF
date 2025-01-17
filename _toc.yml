@@ -4,9 +4,21 @@
 format: jb-book
 root: intro
 parts:
+- caption: Extended Pairing
+  chapters: 
+  - file: EP-030-All.ipynb
+    sections:
+    - file: EP-030-GNOFm.ipynb
+    - file: EP-030-GNOF.ipynb
+    - file: EP-030-PNOF7.ipynb
+    - file: EP-030-PNOF7s.ipynb
+    - file: EP-030-PNOF5.ipynb
 - caption: Perfect Pairing
   chapters: 
-  - file: PP-030.ipynb
-  - file: markdown
-  - file: notebooks
-  - file: markdown-notebooks
+  - file: PP-030-All.ipynb
+    sections:
+    - file: PP-030-GNOFm.ipynb
+    - file: PP-030-GNOF.ipynb
+    - file: PP-030-PNOF7.ipynb
+    - file: PP-030-PNOF7s.ipynb
+    - file: PP-030-PNOF5.ipynb
