@@ -28,46 +28,14 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import ipywidgets as widgets
-from IPython.display import display
-
-# Create a dropdown widget with tab names
-tab_names = ['Tab 1', 'Tab 2', 'Tab 3']
-dropdown = widgets.Dropdown(
-    options=data.keys(),
-    description='Set:',
-    style={'description_width': 'initial'} 
-)
-
-# Create a tab layout
-#tab = widgets.Tab()
-#tab.children = [widgets.Output() for _ in tab_names] 
-#for i, name in enumerate(tab_names):
-#    tab.set_title(i, name)
-
-
-
-
-
-# Function to update tabs based on dropdown selection
-def on_dropdown_change(change):
-    selected_index = tab_names.index(change['new'])
-    tab.selected_index = selected_index
-
-# Attach the callback function to the dropdown
-dropdown.observe(on_dropdown_change, names='value')
-
-# Display the dropdown and tab layout
-display(dropdown, tab)
+help(widgets.Dropdown)
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[4], line 31[0m
-[1;32m     28[0m dropdown[38;5;241m.[39mobserve(on_dropdown_change, names[38;5;241m=[39m[38;5;124m'[39m[38;5;124mvalue[39m[38;5;124m'[39m)
-[1;32m     30[0m [38;5;66;03m# Display the dropdown and tab layout[39;00m
-[0;32m---> 31[0m display(dropdown, [43mtab[49m)
+Cell [0;32mIn[4], line 1[0m
+[0;32m----> 1[0m help([43mwidgets[49m[38;5;241m.[39mDropdown)
 
-[0;31mNameError[0m: name 'tab' is not defined
+[0;31mNameError[0m: name 'widgets' is not defined
 
