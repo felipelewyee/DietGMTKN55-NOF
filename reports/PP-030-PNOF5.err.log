@@ -28,26 +28,46 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from rdkit import Chem
-from rdkit.Chem import AllChem
+import ipywidgets as widgets
+from IPython.display import display
 
-mol = Chem.MolFromSmiles('O[C@H]1[C@H](O)[C@@H](COP(O)(O)=O)OC(O)[C@@H]1O')
-mol = Chem.AddHs(mol) # add H's
-AllChem.EmbedMolecule(mol) # generate 3D structure
+# Create a dropdown widget with tab names
+tab_names = ['Tab 1', 'Tab 2', 'Tab 3']
+dropdown = widgets.Dropdown(
+    options=data.keys(),
+    description='Set:',
+    style={'description_width': 'initial'} 
+)
 
-G6P = nv.show_rdkit(mol)
-G6P
+# Create a tab layout
+#tab = widgets.Tab()
+#tab.children = [widgets.Output() for _ in tab_names] 
+#for i, name in enumerate(tab_names):
+#    tab.set_title(i, name)
 
+
+
+
+
+# Function to update tabs based on dropdown selection
+def on_dropdown_change(change):
+    selected_index = tab_names.index(change['new'])
+    tab.selected_index = selected_index
+
+# Attach the callback function to the dropdown
+dropdown.observe(on_dropdown_change, names='value')
+
+# Display the dropdown and tab layout
+display(dropdown, tab)
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[3], line 8[0m
-[1;32m      5[0m mol [38;5;241m=[39m Chem[38;5;241m.[39mAddHs(mol) [38;5;66;03m# add H's[39;00m
-[1;32m      6[0m AllChem[38;5;241m.[39mEmbedMolecule(mol) [38;5;66;03m# generate 3D structure[39;00m
-[0;32m----> 8[0m G6P [38;5;241m=[39m [43mnv[49m[38;5;241m.[39mshow_rdkit(mol)
-[1;32m      9[0m G6P
+Cell [0;32mIn[4], line 31[0m
+[1;32m     28[0m dropdown[38;5;241m.[39mobserve(on_dropdown_change, names[38;5;241m=[39m[38;5;124m'[39m[38;5;124mvalue[39m[38;5;124m'[39m)
+[1;32m     30[0m [38;5;66;03m# Display the dropdown and tab layout[39;00m
+[0;32m---> 31[0m display(dropdown, [43mtab[49m)
 
-[0;31mNameError[0m: name 'nv' is not defined
+[0;31mNameError[0m: name 'tab' is not defined
 
