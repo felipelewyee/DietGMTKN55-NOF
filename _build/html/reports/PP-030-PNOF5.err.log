@@ -28,26 +28,14 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-from rdkit import Chem
-from rdkit.Chem import AllChem
-
-mol = Chem.MolFromSmiles('O[C@H]1[C@H](O)[C@@H](COP(O)(O)=O)OC(O)[C@@H]1O')
-mol = Chem.AddHs(mol) # add H's
-AllChem.EmbedMolecule(mol) # generate 3D structure
-
-G6P = nv.show_rdkit(mol)
-G6P
-
+help(widgets.Dropdown)
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[3], line 8[0m
-[1;32m      5[0m mol [38;5;241m=[39m Chem[38;5;241m.[39mAddHs(mol) [38;5;66;03m# add H's[39;00m
-[1;32m      6[0m AllChem[38;5;241m.[39mEmbedMolecule(mol) [38;5;66;03m# generate 3D structure[39;00m
-[0;32m----> 8[0m G6P [38;5;241m=[39m [43mnv[49m[38;5;241m.[39mshow_rdkit(mol)
-[1;32m      9[0m G6P
+Cell [0;32mIn[4], line 1[0m
+[0;32m----> 1[0m help([43mwidgets[49m[38;5;241m.[39mDropdown)
 
-[0;31mNameError[0m: name 'nv' is not defined
+[0;31mNameError[0m: name 'widgets' is not defined
 
