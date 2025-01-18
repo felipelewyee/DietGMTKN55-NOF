@@ -1,0 +1,131 @@
+Traceback (most recent call last):
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+    ~~~~~~~~~^
+        nb,
+        ^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from bokeh.models import ColumnDataSource, FactorRange
+from bokeh.plotting import figure, show
+from bokeh.models import ColumnDataSource, HoverTool, TapTool
+import math
+from bokeh.transform import factor_cmap
+from bokeh.palettes import Category10
+
+nof = "GNOF"
+file = open('{}-{}-{}.yaml'.format(set_name,nof,ncwo), 'r')
+data = yaml.safe_load(file)
+subsets = get_Sets(data)
+description = get_Descriptions(subsets)
+
+nofs = ["PNOF5", "PNOF7s", "PNOF7", "GNOF", "GNOFm"]
+
+data = {'subsets' : subsets}
+for nof in nofs:
+    if nof=="GNOFm":
+        file = open('{}-{}-{}.yaml'.format(set_name,"GNOFc",ncwo), 'r')
+    else:
+        file = open('{}-{}-{}.yaml'.format(set_name,nof,ncwo), 'r')
+    yaml_data = yaml.safe_load(file)
+    counts = get_MADs(yaml_data)
+    data[nof] = counts
+
+descriptions = {'subsets' : subsets,
+        'PNOF5'   : description,
+        'PNOF7s'  : description,
+        'PNOF7'   : description,
+        'GNOF'    : description,
+        'GNOFm'   : description}
+
+x = [ (subset, nof) for subset in subsets for nof in nofs ]
+counts = sum(zip(data['PNOF5'], data['PNOF7s'], data['PNOF7'], data['GNOF'], data['GNOFm']), ()) # like an hstack
+descriptions = sum(zip(descriptions['PNOF5'], descriptions['PNOF7s'], descriptions['PNOF7'], descriptions['GNOF'], descriptions['GNOFm']), ()) # like an hstack
+
+source = ColumnDataSource(data=dict(x=x, counts=counts, descriptions=descriptions, nofs=[f for _,f in x]))
+
+p = figure(x_range=FactorRange(*x), width=2000, height=350, title="050 Perfect Pairing")
+
+p.vbar(x='x', top='counts', width=1.0, source=source, line_color="white", legend_field="nofs",
+       fill_color=factor_cmap('x', palette=Category10[len(nofs)], factors=nofs, start=1, end=2))
+
+p.y_range.start = 0
+p.y_range.end = 50
+p.xaxis.major_label_text_font_size = "0pt"
+#p.xaxis.major_label_orientation = math.pi/2
+p.xaxis.group_label_orientation = math.pi/2
+p.xaxis.axis_label = "Sets"
+p.yaxis.axis_label = "Errors (kcal/mol)"
+p.xgrid.grid_line_color = None
+
+p.legend.location = "top_center"
+p.legend.orientation = "horizontal"
+
+hover = HoverTool(tooltips=[
+    ("Description", "@descriptions"),
+    ("MAD", "@counts"),
+])
+p.add_tools(hover)
+
+show(p)
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[4], line 23[0m
+[1;32m     21[0m         file [38;5;241m=[39m [38;5;28mopen[39m([38;5;124m'[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m.yaml[39m[38;5;124m'[39m[38;5;241m.[39mformat(set_name,nof,ncwo), [38;5;124m'[39m[38;5;124mr[39m[38;5;124m'[39m)
+[1;32m     22[0m     yaml_data [38;5;241m=[39m yaml[38;5;241m.[39msafe_load(file)
+[0;32m---> 23[0m     counts [38;5;241m=[39m [43mget_MADs[49m[43m([49m[43myaml_data[49m[43m)[49m
+[1;32m     24[0m     data[nof] [38;5;241m=[39m counts
+[1;32m     26[0m descriptions [38;5;241m=[39m {[38;5;124m'[39m[38;5;124msubsets[39m[38;5;124m'[39m : subsets,
+[1;32m     27[0m         [38;5;124m'[39m[38;5;124mPNOF5[39m[38;5;124m'[39m   : description,
+[1;32m     28[0m         [38;5;124m'[39m[38;5;124mPNOF7s[39m[38;5;124m'[39m  : description,
+[1;32m     29[0m         [38;5;124m'[39m[38;5;124mPNOF7[39m[38;5;124m'[39m   : description,
+[1;32m     30[0m         [38;5;124m'[39m[38;5;124mGNOF[39m[38;5;124m'[39m    : description,
+[1;32m     31[0m         [38;5;124m'[39m[38;5;124mGNOFm[39m[38;5;124m'[39m   : description}
+
+Cell [0;32mIn[2], line 7[0m, in [0;36mget_MADs[0;34m(data)[0m
+[1;32m      5[0m     [38;5;28;01mfor[39;00m system [38;5;129;01min[39;00m data[[38;5;28mset[39m]:
+[1;32m      6[0m         ADs[38;5;241m.[39mappend(data[[38;5;28mset[39m][system][[38;5;124m"[39m[38;5;124mAD[39m[38;5;124m"[39m])
+[0;32m----> 7[0m     MADs[38;5;241m.[39mappend([43mnp[49m[38;5;241;43m.[39;49m[43mmean[49m[43m([49m[43mADs[49m[43m)[49m)
+[1;32m      8[0m [38;5;28;01mreturn[39;00m MADs
+
+File [0;32m~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3860[0m, in [0;36mmean[0;34m(a, axis, dtype, out, keepdims, where)[0m
+[1;32m   3857[0m     [38;5;28;01melse[39;00m:
+[1;32m   3858[0m         [38;5;28;01mreturn[39;00m mean(axis[38;5;241m=[39maxis, dtype[38;5;241m=[39mdtype, out[38;5;241m=[39mout, [38;5;241m*[39m[38;5;241m*[39mkwargs)
+[0;32m-> 3860[0m [38;5;28;01mreturn[39;00m [43m_methods[49m[38;5;241;43m.[39;49m[43m_mean[49m[43m([49m[43ma[49m[43m,[49m[43m [49m[43maxis[49m[38;5;241;43m=[39;49m[43maxis[49m[43m,[49m[43m [49m[43mdtype[49m[38;5;241;43m=[39;49m[43mdtype[49m[43m,[49m
+[1;32m   3861[0m [43m                      [49m[43mout[49m[38;5;241;43m=[39;49m[43mout[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [0;32m~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/_methods.py:135[0m, in [0;36m_mean[0;34m(a, axis, dtype, out, keepdims, where)[0m
+[1;32m    132[0m         dtype [38;5;241m=[39m mu[38;5;241m.[39mdtype([38;5;124m'[39m[38;5;124mf4[39m[38;5;124m'[39m)
+[1;32m    133[0m         is_float16_result [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+[0;32m--> 135[0m ret [38;5;241m=[39m [43mumr_sum[49m[43m([49m[43marr[49m[43m,[49m[43m [49m[43maxis[49m[43m,[49m[43m [49m[43mdtype[49m[43m,[49m[43m [49m[43mout[49m[43m,[49m[43m [49m[43mkeepdims[49m[43m,[49m[43m [49m[43mwhere[49m[38;5;241;43m=[39;49m[43mwhere[49m[43m)[49m
+[1;32m    136[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(ret, mu[38;5;241m.[39mndarray):
+[1;32m    137[0m     ret [38;5;241m=[39m um[38;5;241m.[39mtrue_divide(
+[1;32m    138[0m             ret, rcount, out[38;5;241m=[39mret, casting[38;5;241m=[39m[38;5;124m'[39m[38;5;124munsafe[39m[38;5;124m'[39m, subok[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
+
+[0;31mTypeError[0m: the resolved dtypes are not compatible with add.reduce. Resolved (dtype('<U20'), dtype('<U20'), dtype('<U40'))
+
