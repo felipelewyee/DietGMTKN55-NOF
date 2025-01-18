@@ -46,7 +46,7 @@ nofs = ["PNOF5", "PNOF7s", "PNOF7", "GNOF", "GNOFm"]
 data = {'subsets' : subsets}
 for nof in nofs:
     if nof=="GNOFm":
-        file = open('{}-{}-{}.yaml'.format(set_name,"GNOFc",ncwo), 'r')
+        file = open('{}-{}-{}.yaml'.format(set_name,"GNOFm",ncwo), 'r')
     else:
         file = open('{}-{}-{}.yaml'.format(set_name,nof,ncwo), 'r')
     yaml_data = yaml.safe_load(file)
@@ -66,7 +66,7 @@ descriptions = sum(zip(descriptions['PNOF5'], descriptions['PNOF7s'], descriptio
 
 source = ColumnDataSource(data=dict(x=x, counts=counts, descriptions=descriptions, nofs=[f for _,f in x]))
 
-p = figure(x_range=FactorRange(*x), width=2000, height=350, title="150 Perfect Pairing")
+p = figure(x_range=FactorRange(*x), width=2000, height=350, toolbar_location="left", title="150 Perfect Pairing")
 
 p.vbar(x='x', top='counts', width=1.0, source=source, line_color="white", legend_field="nofs",
        fill_color=factor_cmap('x', palette=Category10[len(nofs)], factors=nofs, start=1, end=2))
@@ -77,10 +77,10 @@ p.xaxis.major_label_text_font_size = "0pt"
 #p.xaxis.major_label_orientation = math.pi/2
 p.xaxis.group_label_orientation = math.pi/2
 p.xaxis.axis_label = "Sets"
-p.yaxis.axis_label = "Errors (kcal/mol)"
+p.yaxis.axis_label = "MAD (kcal/mol)"
 p.xgrid.grid_line_color = None
 
-p.legend.location = "top_center"
+p.legend.location = "top_left"
 p.legend.orientation = "horizontal"
 
 hover = HoverTool(tooltips=[
@@ -96,7 +96,7 @@ show(p)
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mFileNotFoundError[0m                         Traceback (most recent call last)
 Cell [0;32mIn[4], line 21[0m
-[1;32m     19[0m     file [38;5;241m=[39m [38;5;28mopen[39m([38;5;124m'[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m.yaml[39m[38;5;124m'[39m[38;5;241m.[39mformat(set_name,[38;5;124m"[39m[38;5;124mGNOFc[39m[38;5;124m"[39m,ncwo), [38;5;124m'[39m[38;5;124mr[39m[38;5;124m'[39m)
+[1;32m     19[0m     file [38;5;241m=[39m [38;5;28mopen[39m([38;5;124m'[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m.yaml[39m[38;5;124m'[39m[38;5;241m.[39mformat(set_name,[38;5;124m"[39m[38;5;124mGNOFm[39m[38;5;124m"[39m,ncwo), [38;5;124m'[39m[38;5;124mr[39m[38;5;124m'[39m)
 [1;32m     20[0m [38;5;28;01melse[39;00m:
 [0;32m---> 21[0m     file [38;5;241m=[39m [38;5;28;43mopen[39;49m[43m([49m[38;5;124;43m'[39;49m[38;5;132;43;01m{}[39;49;00m[38;5;124;43m-[39;49m[38;5;132;43;01m{}[39;49;00m[38;5;124;43m-[39;49m[38;5;132;43;01m{}[39;49;00m[38;5;124;43m.yaml[39;49m[38;5;124;43m'[39;49m[38;5;241;43m.[39;49m[43mformat[49m[43m([49m[43mset_name[49m[43m,[49m[43mnof[49m[43m,[49m[43mncwo[49m[43m)[49m[43m,[49m[43m [49m[38;5;124;43m'[39;49m[38;5;124;43mr[39;49m[38;5;124;43m'[39;49m[43m)[49m
 [1;32m     22[0m yaml_data [38;5;241m=[39m yaml[38;5;241m.[39msafe_load(file)

@@ -460,7 +460,7 @@
     </style>
     <div>
         <a href="https://bokeh.org" target="_blank" class="bk-notebook-logo"></a>
-        <span id="a36a5542-8461-42d6-a0e5-a8abcdc6ed99">Loading BokehJS ...</span>
+        <span id="b8d79eb0-83d2-4ab2-add7-a7cdd066ae24">Loading BokehJS ...</span>
     </div>
 </div><script type="application/javascript">'use strict';
 (function(root) {
@@ -625,7 +625,7 @@ const JS_MIME_TYPE = 'application/javascript';
      "</div>"}};
 
   function display_loaded(error = null) {
-    const el = document.getElementById("a36a5542-8461-42d6-a0e5-a8abcdc6ed99");
+    const el = document.getElementById("b8d79eb0-83d2-4ab2-add7-a7cdd066ae24");
     if (el != null) {
       const html = (() => {
         if (typeof root.Bokeh === "undefined") {
@@ -759,7 +759,7 @@ function(Bokeh) {
       console.log("Bokeh: BokehJS failed to load within specified timeout.");
       root._bokeh_failed_load = true;
     } else if (force !== true) {
-      const cell = $(document.getElementById("a36a5542-8461-42d6-a0e5-a8abcdc6ed99")).parents('.cell').data().cell;
+      const cell = $(document.getElementById("b8d79eb0-83d2-4ab2-add7-a7cdd066ae24")).parents('.cell').data().cell;
       cell.output_area.append_execute_result(NB_LOAD_WARNING)
     }
   }
@@ -780,7 +780,7 @@ function(Bokeh) {
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">21</span>
-<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1">.yaml&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">set_name</span><span class="p">,</span><span class="s2">&quot;GNOFc&quot;</span><span class="p">,</span><span class="n">ncwo</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1">.yaml&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">set_name</span><span class="p">,</span><span class="s2">&quot;GNOFm&quot;</span><span class="p">,</span><span class="n">ncwo</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">20</span> <span class="k">else</span><span class="p">:</span>
 <span class="ne">---&gt; </span><span class="mi">21</span>     <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1">-</span><span class="si">{}</span><span class="s1">.yaml&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">set_name</span><span class="p">,</span><span class="n">nof</span><span class="p">,</span><span class="n">ncwo</span><span class="p">),</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="n">yaml_data</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
@@ -799,8 +799,6 @@ function(Bokeh) {
 </pre></div>
 </div>
 </div>
-</div>
-<div class="toctree-wrapper compound">
 </div>
 </section>
 
