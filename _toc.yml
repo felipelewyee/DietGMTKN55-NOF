@@ -13,6 +13,20 @@ parts:
     - file: EP-030-PNOF7.ipynb
     - file: EP-030-PNOF7s.ipynb
     - file: EP-030-PNOF5.ipynb
+  - file: EP-050-All.ipynb
+    sections:
+    - file: EP-050-GNOFm.ipynb
+    - file: EP-050-GNOF.ipynb
+    - file: EP-050-PNOF7.ipynb
+    - file: EP-050-PNOF7s.ipynb
+    - file: EP-050-PNOF5.ipynb
+  - file: EP-100-All.ipynb
+    sections:
+    - file: EP-100-GNOFm.ipynb
+    - file: EP-100-GNOF.ipynb
+    - file: EP-100-PNOF7.ipynb
+    - file: EP-100-PNOF7s.ipynb
+    - file: EP-100-PNOF5.ipynb
 - caption: Perfect Pairing
   chapters: 
   - file: PP-030-All.ipynb
@@ -22,3 +36,17 @@ parts:
     - file: PP-030-PNOF7.ipynb
     - file: PP-030-PNOF7s.ipynb
     - file: PP-030-PNOF5.ipynb
+  - file: PP-050-All.ipynb
+    sections:
+    - file: PP-050-GNOFm.ipynb
+    - file: PP-050-GNOF.ipynb
+    - file: PP-050-PNOF7.ipynb
+    - file: PP-050-PNOF7s.ipynb
+    - file: PP-050-PNOF5.ipynb
+  - file: PP-100-All.ipynb
+    sections:
+    - file: PP-100-GNOFm.ipynb
+    - file: PP-100-GNOF.ipynb
+    - file: PP-100-PNOF7.ipynb
+    - file: PP-100-PNOF7s.ipynb
+    - file: PP-100-PNOF5.ipynb
