@@ -50,3 +50,10 @@ parts:
     - file: PP-100-PNOF7.ipynb
     - file: PP-100-PNOF7s.ipynb
     - file: PP-100-PNOF5.ipynb
+  - file: PP-150-All.ipynb
+    sections:
+    - file: PP-150-GNOFm.ipynb
+    - file: PP-150-GNOF.ipynb
+    - file: PP-150-PNOF7.ipynb
+    - file: PP-150-PNOF7s.ipynb
+    - file: PP-150-PNOF5.ipynb
