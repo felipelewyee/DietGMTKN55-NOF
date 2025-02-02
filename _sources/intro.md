@@ -4,9 +4,13 @@
 This page is under construction and the data contained is still subject to change. This warning will be removed in the future when the data becomes trustfull.
 ```
 
-This website presents the results of the PNOF (Piris Natural Orbital Functional) within the DietGMTKN55. The approach serves as a reduced version of the GMTKN55 for the rapid benchmarking of electronic structure methods. The original GMTKN55 comprises 55 sets, encompassing a total of 1500 chemical systems (including chemical reactions, conformational changes, etc.), designed to evaluate the method's accuracy with a numerical indicator. The diet benchmark aims to approximate this value using significantly fewer systems, specifically 030, 050, 100, and 150 systems. While all cases seek to replicate the value of the original GMTKN55 benchmark, it is anticipated that involving more systems will yield a more accurate reproduction.
+```{admonition} About
+This website presents the results of the PNOF (Piris Natural Orbital Functional) within the DietGMTKN55. The approach serves as a reduced version of the GMTKN55 for the rapid benchmarking of electronic structure methods. The original GMTKN55 comprises 55 sets, encompassing a total of 1500 chemical systems (including chemical reactions, conformational changes, etc.), designed to evaluate the method's accuracy with a numerical indicator.
+
+The diet benchmark aims to approximate this value using significantly fewer systems, specifically 030, 050, 100, and 150 systems. While all cases seek to replicate the value of the original GMTKN55 benchmark, it is anticipated that involving more systems will yield a more accurate reproduction.
 
 Beyond the numerical results, the relevance of this webpage is to offer insight into the performance of the various NOFs across systems with similar chemical features, aiding in understanding the performance of the current NOF, hence, aiding to identify opportunities for enhancement, and recognizing its strengths to effectively tackle challenging chemical challenges.
+```
 
 ```{admonition} How to use this page
 The results can be explored using the bar at the left of the page.
