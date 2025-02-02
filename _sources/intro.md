@@ -13,9 +13,9 @@ The results can be explored using the bar at the left of the page.
 
 - Results are divied in two parts: i) perfect pairing and ii) extended pairing.
 - Each part presents the results of the 030, 050, 100 and 150 systems. (150 for extended pairing is still in process)
-- Clicing on a test (030, 050, 100 and 150) leads to a bar plot that summarizes the absolute deviations for all the NOFs, and a submenu is shown to examine each specific NOF: PNOF5, PNOF7s, PNOF7, GNOF, GNOFc.
-- Pointing the mouse over a bar of the plot displays a description of the chemical process involved on that set.
-- Each set is formed by several reactions with common characteristics, the involved molecules, stechiometry, energy and errors can be explored using the molecular visualized below the bar plot. 
+- Clicking on a test (030, 050, 100 and 150) display a bar plot that summarizes the absolute deviations for all the NOFs, and a submenu is shown to examine results for each specific functional: PNOF5, PNOF7s, PNOF7, GNOF, GNOFm.
+- Placing the pointer over a bar of the plot displays a description of the chemical process involved on that set.
+- Each set is formed by several systems with common characteristics. The involved molecules, stechiometry, energy and errors can be explored using the molecular visualizer below the bar plot.
 ```
 
 ```{warning}
