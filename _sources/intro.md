@@ -1,9 +1,23 @@
 # DietGMTKN55-NOF
 
-THIS PAGE IS UNDER CONSTRUCTION AND THE DATA PRESENTED IS EITHER INCOMPLETE OR EVEN JUST A TEMPORARY PLACEHOLDER UNTIL THE REAL DATA IS PLACED. THIS LEGEND WILL BE REMOVED WHEN THE DATA IS READY AND CAN BE TRUSTED. 
+```{warning}
+This page is under construction and the data contained is still subject to change. This warning will be removed in the future when the data becomes trustfull.
+```
 
-This webpage presents the results of the DietGMTKN55 to PNOF (Piris Natural Orbital Functional) calculations. DietGMTKN55 is a reduced version of the GMTKN55 test set for fast benchmarking quantum chemistry methodologies. 
+This website presents the results of the PNOF (Piris Natural Orbital Functional) within the DietGMTKN55. The approach serves as a reduced version of the GMTKN55 for the rapid benchmarking of electronic structure methods. The original GMTKN55 comprises 55 sets, encompassing a total of 1500 chemical systems (including chemical reactions, conformational changes, etc.), designed to evaluate the method's accuracy with a numerical indicator. The diet benchmark aims to approximate this value using significantly fewer systems, specifically 030, 050, 100, and 150 systems. While all cases seek to replicate the value of the original GMTKN55 benchmark, it is anticipated that involving more systems will yield a more accurate reproduction.
 
-The set is formed by four subsets: 030, 050, 100 and 150, these desginating the given number of composing systems.
+Beyond the numerical results, the relevance of this webpage is to offer insight into the performance of the various NOFs across systems with similar chemical features, aiding in understanding the performance of the current NOF, hence, aiding to identify opportunities for enhancement, and recognizing its strengths to effectively tackle challenging chemical challenges.
 
-We currently provide results for PNOF5, PNOF7, PNOF7s, GNOF and GNOFm with perfect pairing for all sets. Results for extended pairing are provided for the subsets 030 and 050.
+```{admonition} How to use this page
+The results can be explored using the bar at the left of the page.
+
+- Results are divied in two parts: i) perfect pairing and ii) extended pairing.
+- Each part presents the results of the 030, 050, 100 and 150 systems. (150 for extended pairing is still in process)
+- Clicing on a test (030, 050, 100 and 150) leads to a bar plot that summarizes the absolute deviations for all the NOFs, and a submenu is shown to examine each specific NOF: PNOF5, PNOF7s, PNOF7, GNOF, GNOFc.
+- Pointing the mouse over a bar of the plot displays a description of the chemical process involved on that set.
+- Each set is formed by several reactions with common characteristics, the involved molecules, stechiometry, energy and errors can be explored using the molecular visualized below the bar plot. 
+```
+
+```{warning}
+Current results correspond to the def2-TZVPD basis set, while the original set was reported using def2-QZVP basis set.
+```
