@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -63,7 +63,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="100" href="EP-100-All.html" />
+    <link rel="next" title="150" href="EP-150-All.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -171,6 +171,14 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Extended Pairing</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="EP-150-All.html">150</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="EP-150-GNOFm.html">GNOFm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-150-GNOF.html">GNOF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-150-PNOF7.html">PNOF7</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-150-PNOF7s.html">PNOF7s</a></li>
+<li class="toctree-l2"><a class="reference internal" href="EP-150-PNOF5.html">PNOF5</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="EP-100-All.html">100</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="EP-100-GNOFm.html">GNOFm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="EP-100-GNOF.html">GNOF</a></li>
@@ -432,11 +440,11 @@
 </div>
 <div class="tip admonition">
 <p class="admonition-title">About</p>
-<p>This website presents the results of the PNOF (Piris Natural Orbital Functional) within the DietGMTKN55. The approach serves as a reduced version of the GMTKN55 for the rapid benchmarking of electronic structure methods. The original GMTKN55 comprises 55 sets, encompassing a total of 1500 chemical systems (including chemical reactions, conformational changes, etc.), designed to evaluate the method’s accuracy with a numerical indicator.</p>
-<p>The diet benchmark aims to approximate this value using significantly fewer systems, specifically 030, 050, 100, and 150 systems. While all cases seek to replicate the value of the original GMTKN55 benchmark, it is anticipated that involving more systems will yield a more accurate reproduction.</p>
-<p>Beyond the numerical results, the relevance of this webpage is to offer insight into the performance of the various NOFs across systems with similar chemical features, aiding in understanding the performance of the current NOF, hence, aiding to identify opportunities for enhancement, and recognizing its strengths to effectively tackle challenging chemical challenges.</p>
+<p>This website presents PNOF (Piris Natural Orbital Functional) results within the DietGMTKN55 benchmark, a streamlined version of the GMTKN55 designed for rapid evaluation of electronic structure methods.  The original GMTKN55 benchmark comprises 55 datasets with 1500 chemical systems (including reactions, conformational changes, etc.) and uses a numerical indicator to assess method accuracy.</p>
+<p>The DietGMTKN55 benchmark approximates this accuracy using significantly fewer systems: 30, 50, 100, and 150.  While all DietGMTKN55 versions aim to reproduce the full GMTKN55 benchmark value, using more systems is expected to improve accuracy.</p>
+<p>Beyond numerical results, this website provides insights into the performance of various NOFs across chemically similar systems. This allows users to understand the current NOF’s strengths and weaknesses, identify areas for improvement, and leverage its capabilities for challenging chemical problems.</p>
 </div>
-<div class="admonition-how-to-use-this-page admonition">
+<div class="dropdown admonition">
 <p class="admonition-title">How to use this page</p>
 <p>The results can be explored using the bar at the left of the page.</p>
 <ul class="simple">
@@ -446,6 +454,64 @@
 <li><p>Placing the pointer over a bar of the plot displays a description of the chemical process involved on that set.</p></li>
 <li><p>Each set is formed by several systems with common characteristics. The involved molecules, stechiometry, energy and errors can be explored using the molecular visualizer below the bar plot.</p></li>
 </ul>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Sets of GMTKN55</p>
+<p><em>W4-11</em>: Total atomisation energies
+<em>G21EA</em>: Adiabatic electron affinities
+<em>G21IP</em>: Adiabatic ionisation potentials
+<em>DIPCS10</em>: Double-ionisation potentials of closed-shell systems
+<em>PA26</em>: Adiabatic proton affinities (incl. of amino acids)
+<em>SIE4x4</em>: Self-interaction-error related problems
+<em>ALKBDE10</em>: Dissociation energies in group-1 and -2 diatomics
+<em>YBDE18</em>: Bond-dissociation energies in ylides
+<em>AL2X6</em>: Dimerisation energies of AlX3 compounds
+<em>HEAVYSB11</em>: Dissociation energies in heavy-element compounds
+<em>NBPRC</em>: Oligomerisations and H2 fragmentations of NH3/BH3 systems H2 activation reactions with PH3/BH3 systems
+<em>ALK8</em>: Dissociation and other reactions of alkaline compounds
+<em>RC21</em>: Fragmentations and rearrangements in radical cations
+<em>G2RC</em>: Reaction energies of selected G2/97 systems
+<em>BH76RC</em>: Reaction energies of the BH76 set
+<em>FH51</em>: Reaction energies in various (in-)organic systems
+<em>TAUT15</em>: Relative energies in tautomers
+<em>DC13</em>: 13 difficult cases for DFT methods
+<em>MB16-43</em>: Decomposition energies of artificial molecules
+<em>DARC</em>: Reaction energies of Diels–Alder reactions
+<em>RSE43</em>: Radical-stabilisation energies
+<em>BSR36</em>: Bond-separation reactions of saturated hydrocarbons
+<em>CDIE20</em>: Double-bond isomerisation energies in cyclic systems
+<em>ISO34</em>: Isomerisation energies of small and medium-sized organic molecules
+<em>ISOL24</em>: Isomerisation energies of large organic molecules
+<em>C60ISO</em>: Relative energies between C60 isomers
+<em>PArel</em>: Relative energies in protonated isomers
+<em>BH76</em>: Barrier heights of hydrogen transfer, heavy atom transfer, nucleophilic substitution, unimolecular and association reactions
+<em>BHPERI</em>: Barrier heights of pericyclic reactions
+<em>BHDIV10</em>: Diverse reaction barrier heights
+<em>INV24</em>: Inversion/racemisation barrier heights
+<em>BHROT27</em>: Barrier heights for rotation around single bonds
+<em>PX13</em>: Proton-exchange barriers in H2O, NH3, and HF clusters
+<em>WCPT18</em>: Proton-transfer barriers in uncatalysed and water-catalysed reactions
+<em>RG18</em>: Interaction energies in rare-gas complexes
+<em>ADIM6</em>: Interaction energies of n-alkane dimers
+<em>S22</em>: Binding energies of noncovalently bound dimers
+<em>S66</em>: Binding energies of noncovalently bound dimers
+<em>HEAVY28</em>: Noncovalent interaction energies between heavy element hydrides
+<em>WATER27</em>: Binding energies in (H2O)n, H+(H2O)n and OH-(H2O)n
+<em>CARBHB12</em>: Hydrogen-bonded complexes between carbene analogues and H2O, NH3, or HCl
+<em>PNICO23</em>: Interaction energies in pnicogen-containing dimers
+<em>HAL59</em>: Binding energies in halogenated dimers (incl. halogen bonds)
+<em>AHB21</em>: Interaction energies in anion–neutral dimers
+<em>CHB6</em>: Interaction energies in cation–neutral dimers
+<em>IL16</em>: Interaction energies in anion–cation dimers
+<em>IDISP</em>: Intramolecular dispersion interactions
+<em>ICONF</em>: Relative energies in conformers of inorganic systems
+<em>ACONF</em>: Relative energies of alkane conformers
+<em>Amino20x4</em>: Relative energies in amino acid conformers
+<em>PCONF21</em>: Relative energies in tri- and tetrapeptide conformers
+<em>MCONF</em>: Relative energies in melatonin conformers
+<em>SCONF</em>: Relative energies of sugar conformers
+<em>UPU23</em>: Relative energies between RNA-backbone conformers
+<em>BUT14DIOL</em>: Relative energies in butane-1,4-diol conformers</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -488,11 +554,11 @@
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="EP-100-All.html"
+       href="EP-150-All.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">100</p>
+        <p class="prev-next-title">150</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
