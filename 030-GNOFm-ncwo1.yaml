@@ -146,14 +146,14 @@ BH76:
         Count: 1
       h:
         Charge: 0
-        E_NOF: -0.5
+        E_NOF: -0.4998098
         Multiplicity: 1
         Count: -1
-    APD: 69.53027193813188
-    Energy: 0.04811669999998003
+    APD: 68.8601374999297
+    Energy: 0.047926499999980055
     E_Ref: 17.8
-    AD: 12.376388404987473
-    WTMAD2: 1.2582661545070597
+    AD: 12.25710447498749
+    WTMAD2: 1.2461389549570614
     Weight: 3.05
 MB16-43:
   10:
@@ -214,19 +214,19 @@ Amino20x4:
     Species:
       PHE_xar:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -724.8603901
         Multiplicity: 0
         Count: 1
       PHE_xaw:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -724.8642731
         Multiplicity: 0
         Count: -1
-    APD: 100.0
-    Energy: 0
+    APD: 41.665122163079694
+    Energy: 0.0038829999999734355
     E_Ref: 1.719
-    AD: 1.719
-    WTMAD2: 1.335663
+    AD: 0.71622344998334
+    WTMAD2: 0.5565056206370552
     Weight: 23.31
   28:
     Species:
@@ -492,14 +492,14 @@ W4-11:
         Count: 1
       h:
         Charge: 0
-        E_NOF: -0.5
+        E_NOF: -0.4998098
         Multiplicity: 1
         Count: 1
-    APD: 7.333029149101939
-    Energy: 0.158839300000011
+    APD: 7.22206632154077
+    Energy: 0.15902950000001098
     E_Ref: 107.499
-    AD: 7.882933004993092
-    WTMAD2: 0.04992524236495625
+    AD: 7.763649074993111
+    WTMAD2: 0.04916977747495637
     Weight: 0.19
   132:
     Species:

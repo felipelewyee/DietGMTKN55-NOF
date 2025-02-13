@@ -391,37 +391,37 @@ Amino20x4:
     Species:
       HIS_xaq:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -717.8945461
         Multiplicity: 0
         Count: -1
       HIS_xau:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -717.8944901
         Multiplicity: 0
         Count: 1
-    APD: 100.0
-    Energy: 0
+    APD: 99.52008198985203
+    Energy: 5.599999997230043e-5
     E_Ref: 7.318
-    AD: 7.318
-    WTMAD2: 3.4116515999999995
+    AD: 7.282879600017371
+    WTMAD2: 3.3952784695280984
     Weight: 23.31
   76:
     Species:
       TYR_xag:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -798.7827042
         Multiplicity: 0
         Count: -1
       TYR_xan:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -798.786972
         Multiplicity: 0
         Count: 1
-    APD: 100.0
-    Energy: 0
+    APD: 251.04688318212283
+    Energy: -0.004267799999979616
     E_Ref: 1.772
-    AD: 1.772
-    WTMAD2: 0.8261063999999999
+    AD: 4.448550769987216
+    WTMAD2: 2.07391436896804
     Weight: 23.31
 BHROT27:
   24:
@@ -906,55 +906,55 @@ MCONF:
     Species:
       32:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -761.7191993
         Multiplicity: 0
         Count: 1
       1:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -761.7254256
         Multiplicity: 0
         Count: -1
-    APD: 100.0
-    Energy: 0
+    APD: 37.4226915867369
+    Energy: 0.006226299999980256
     E_Ref: 6.24
-    AD: 6.24
-    WTMAD2: 1.426464
+    AD: 2.335175955012383
+    WTMAD2: 0.5338212233158308
     Weight: 11.43
   30:
     Species:
       31:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -761.7229744
         Multiplicity: 0
         Count: 1
       1:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -761.7254256
         Multiplicity: 0
         Count: -1
-    APD: 100.0
-    Energy: 0
+    APD: 68.36892839511492
+    Energy: 0.002451199999995879
     E_Ref: 4.86
-    AD: 4.86
-    WTMAD2: 1.110996
+    AD: 3.322729920002585
+    WTMAD2: 0.759576059712591
     Weight: 11.43
   28:
     Species:
       29:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -761.7241079
         Multiplicity: 0
         Count: 1
       1:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -761.7254256
         Multiplicity: 0
         Count: -1
-    APD: 100.0
-    Energy: 0
+    APD: 84.31886992459043
+    Energy: 0.001317699999958677
     E_Ref: 5.27
-    AD: 5.27
-    WTMAD2: 1.2047219999999998
+    AD: 4.443604445025915
+    WTMAD2: 1.0158079761329242
     Weight: 11.43
 PX13:
   4:

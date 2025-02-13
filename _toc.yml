@@ -6,6 +6,13 @@ root: intro
 parts:
 - caption: Extended Pairing
   chapters: 
+  - file: EP-150-All.ipynb
+    sections:
+    - file: EP-150-GNOFm.ipynb
+    - file: EP-150-GNOF.ipynb
+    - file: EP-150-PNOF7.ipynb
+    - file: EP-150-PNOF7s.ipynb
+    - file: EP-150-PNOF5.ipynb
   - file: EP-100-All.ipynb
     sections:
     - file: EP-100-GNOFm.ipynb
