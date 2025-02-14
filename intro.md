@@ -1,14 +1,10 @@
 # DietGMTKN55-NOF
 
-```{warning}
-This page is under construction and the data contained is still subject to change. This warning will be removed in the future when the data becomes trustfull.
-```
-
 ```{admonition} About
 :class: tip
-This website presents PNOF (Piris Natural Orbital Functional) results within the DietGMTKN55 benchmark, a streamlined version of the GMTKN55 designed for rapid evaluation of electronic structure methods.  The original GMTKN55 benchmark comprises 55 datasets with 1500 chemical systems (including reactions, conformational changes, etc.) and uses a numerical indicator to assess method accuracy.
+This website benchmarks the PNOF (Piris Natural Orbital Functional) using the DietGMTKN55, a streamlined version of the GMTKN55 designed for rapid evaluation of electronic structure methods.  The original GMTKN55 benchmark comprises 55 datasets with 1500 chemical systems (including reactions, conformational changes, etc.) and uses a numerical indicator to assess method accuracy.
 
-The DietGMTKN55 benchmark approximates this accuracy using significantly fewer systems: 30, 50, 100, and 150.  While all DietGMTKN55 versions aim to reproduce the full GMTKN55 benchmark value, using more systems is expected to improve accuracy.
+The DietGMTKN55 benchmark approximates this accuracy using significantly fewer systems; particularly it provides four versions with 30, 50, 100, and 150 systems, respectively.  While all DietGMTKN55 versions aim to reproduce the full GMTKN55 benchmark value, using more systems is expected to improve accuracy.
 
 Beyond numerical results, this website provides insights into the performance of various NOFs across chemically similar systems. This allows users to understand the current NOF's strengths and weaknesses, identify areas for improvement, and leverage its capabilities for challenging chemical problems.
 ```
@@ -136,6 +132,10 @@ The results can be explored using the bar at the left of the page.
 **UPU23**: Relative energies between RNA-backbone conformers
 
 **BUT14DIOL**: Relative energies in butane-1,4-diol conformers
+```
+
+```{warning}
+This page is under construction and the data contained is still subject to change. This warning will be removed in the future when the data becomes trustfull.
 ```
 
 ```{warning}
