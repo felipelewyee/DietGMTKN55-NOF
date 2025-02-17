@@ -1,1 +1,8 @@
-for ncwo in ncwo1 ncwomax; do echo $ncwo; cd $ncwo; for set in 030 050 100 150; do echo $set; cd $set; for nof in PNOF5 PNOF7 PNOF7s GNOF GNOFc; do echo $nof; cd $nof; julia createyaml.jl; mv *NOF*.yaml ~/DietGMTKN55-NOF; cd ..; done; cd ..; done; cd ..; done
+# For update data values
+for ncwo in ncwo1 ncwomax; do echo $ncwo; cd $ncwo; for set in 030 050 100 150; do echo $set; cd $set; for nof in PNOF5 PNOF7 PNOF7s GNOF GNOFm; do echo $nof; cd $nof; julia createyaml.jl; mv *NOF*.yaml ~/DietGMTKN55-NOF; cd ..; done; cd ..; done; cd ..; done
+
+# To copy PP-100-GNOFm to all sets and functionals
+for set in 030 050 100 150; do echo $set; for nof in PNOF5 PNOF7 PNOF7s GNOF GNOFm; do echo $nof; cp PP-100-GNOFm.ipynb PP-${set}-${nof}.ipynb; sed -i -e "s/GNOFm/${nof}/g" PP-${set}-${nof}.ipynb; sed -i -e "s/100/${set}/g" PP-${set}-${nof}.ipynb; done; done
+for set in 030 050 100 150; do echo $set; for nof in PNOF5 PNOF7 PNOF7s GNOF GNOFm; do echo $nof; cp PP-100-GNOFm.ipynb EP-${set}-${nof}.ipynb; sed -i -e "s/GNOFm/${nof}/g" EP-${set}-${nof}.ipynb; sed -i -e "s/100/${set}/g" EP-${set}-${nof}.ipynb; sed -i -e "s/ncwo1/ncwomax/g" EP-${set}-${nof}.ipynb; sed -i -e "s/Perfect/Extended/g" EP-${set}-${nof}.ipynb; done; done
+for set in 030 050 100 150; do echo $set; cp PP-100-All.ipynb PP-${set}-All.ipynb; sed -i -e "s/100/${set}/g" PP-${set}-All.ipynb; done
+for set in 030 050 100 150; do echo $set; cp PP-100-All.ipynb EP-${set}-All.ipynb; sed -i -e "s/100/${set}/g" EP-${set}-All.ipynb; sed -i -e "s/ncwo1/ncwomax/g" EP-${set}-All.ipynb; sed -i -e "s/Perfect/Extended/g" EP-${set}-All.ipynb; done
