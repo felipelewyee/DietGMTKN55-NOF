@@ -892,11 +892,11 @@ WATER27:
         Count: 20
       H2O20fc:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -1523.4637972
         Multiplicity: 0
         Count: -1
-    APD: 459412.52163235575
-    Energy: -1523.351742
+    APD: 66.21374101923494
+    Energy: 0.11205519999998614
     E_Ref: 208.0
     AD: -1
     WTMAD2: -0.013999999999999999

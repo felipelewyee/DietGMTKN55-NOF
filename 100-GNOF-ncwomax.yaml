@@ -720,14 +720,14 @@ PCONF21:
         Count: 1
       99:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -969.4594797
         Multiplicity: 0
         Count: -1
-    APD: 2.7889796658153668e7
-    Energy: -969.457685
+    APD: 48.36944472462903
+    Energy: 0.001794700000004923
     E_Ref: 2.18
-    AD: -1
-    WTMAD2: -0.3505
+    AD: 1.0544538949969129
+    WTMAD2: 0.3695860901964179
     Weight: 35.05
   18:
     Species:
@@ -751,19 +751,19 @@ PCONF21:
     Species:
       691:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -969.4555528
         Multiplicity: 0
         Count: 1
       99:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -969.4594797
         Multiplicity: 0
         Count: -1
-    APD: 100.0
-    Energy: 0
+    APD: 52.966169876181155
+    Energy: 0.0039269000000103915
     E_Ref: 1.61
-    AD: 1.61
-    WTMAD2: 0.5643050000000001
+    AD: 0.8527553350065167
+    WTMAD2: 0.29889074491978407
     Weight: 35.05
 RSE43:
   43:
@@ -1943,14 +1943,14 @@ MCONF:
         Count: -1
       23:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -763.8238147
         Multiplicity: 0
         Count: 1
-    APD: 9.021301995423164e6
-    Energy: 763.8307358
+    APD: 18.256725706219772
+    Energy: 0.006921099999999569
     E_Ref: 5.31
-    AD: -1
-    WTMAD2: -0.1143
+    AD: 0.9694321350002699
+    WTMAD2: 0.11080609303053085
     Weight: 11.43
   7:
     Species:

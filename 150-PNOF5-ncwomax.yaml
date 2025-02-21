@@ -1292,14 +1292,14 @@ BH76RC:
         Count: 1
       h:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -0.4998098
         Multiplicity: 1
         Count: -1
-    APD: 1581.1510772752706
-    Energy: -0.4203856999999971
+    APD: 179.83609165731372
+    Energy: 0.07942410000000294
     E_Ref: 17.8
-    AD: -1
-    WTMAD2: -0.017733333333333334
+    AD: 32.01082431500184
+    WTMAD2: 0.5676586178526993
     Weight: 2.66
 DARC:
   11:
@@ -1859,7 +1859,7 @@ BH76:
         Count: 1
       h:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -0.4998098
         Multiplicity: 1
         Count: -1
       H2:
@@ -1867,11 +1867,11 @@ BH76:
         E_NOF: -1.1688545
         Multiplicity: 0
         Count: -1
-    APD: 2986.766924175258
-    Energy: -0.4464903
+    APD: 244.7353033505152
+    Energy: 0.053319499999999964
     E_Ref: 9.7
-    AD: -1
-    WTMAD2: -0.02033333333333333
+    AD: 23.739324424999975
+    WTMAD2: 0.4826995966416662
     Weight: 3.05
   50:
     Species:
@@ -2148,19 +2148,19 @@ ISOL24:
     Species:
       i2e:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -733.354315
         Multiplicity: 0
         Count: -1
       i2p:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -733.3212206
         Multiplicity: 0
         Count: 1
-    APD: 100.0
-    Energy: 0
+    APD: 46.09051179205231
+    Energy: 0.03309440000009545
     E_Ref: 38.5
-    AD: 38.5
-    WTMAD2: 0.6647666666666666
+    AD: 17.74484703994014
+    WTMAD2: 0.30639435888963307
     Weight: 2.59
 PCONF21:
   3:

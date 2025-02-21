@@ -500,14 +500,14 @@ UPU23:
         Count: 1
       2p:
         Charge: -1
-        E_NOF: 0
+        E_NOF: -2304.7900314
         Multiplicity: 0
         Count: -1
-    APD: 100.0
-    Energy: 0
+    APD: 2.5358745582324737e8
+    Energy: 2304.7900314
     E_Ref: 0.57
-    AD: 0.57
-    WTMAD2: 0.11320199999999998
+    AD: -1
+    WTMAD2: -0.1986
     Weight: 9.93
 BH76RC:
   3:
@@ -892,11 +892,11 @@ WATER27:
         Count: 20
       H2O20fc:
         Charge: 0
-        E_NOF: 0
+        E_NOF: -1523.4596105
         Multiplicity: 0
         Count: -1
-    APD: 459410.9851148558
-    Energy: -1523.346646
+    APD: 65.93957395430004
+    Energy: 0.11296450000008917
     E_Ref: 208.0
     AD: -1
     WTMAD2: -0.013999999999999999
