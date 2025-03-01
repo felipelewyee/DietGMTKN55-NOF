@@ -468,7 +468,7 @@
     </style>
     <div>
         <a href="https://bokeh.org" target="_blank" class="bk-notebook-logo"></a>
-        <span id="a6533e86-d162-458e-a3d6-c92e43c2aa5b">Loading BokehJS ...</span>
+        <span id="d0995700-f617-4bba-a215-974b70a7f14a">Loading BokehJS ...</span>
     </div>
 </div><script type="application/javascript">'use strict';
 (function(root) {
@@ -633,7 +633,7 @@ const JS_MIME_TYPE = 'application/javascript';
      "</div>"}};
 
   function display_loaded(error = null) {
-    const el = document.getElementById("a6533e86-d162-458e-a3d6-c92e43c2aa5b");
+    const el = document.getElementById("d0995700-f617-4bba-a215-974b70a7f14a");
     if (el != null) {
       const html = (() => {
         if (typeof root.Bokeh === "undefined") {
@@ -667,7 +667,7 @@ const JS_MIME_TYPE = 'application/javascript';
         el.append(wrapper);
       }
     } else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(() => display_loaded(error), 150);
+      setTimeout(() => display_loaded(error), 100);
     }
   }
 
@@ -762,12 +762,12 @@ function(Bokeh) {
       }if (force === true) {
         display_loaded();
       }} else if (Date.now() < root._bokeh_timeout) {
-      setTimeout(run_inline_js, 150);
+      setTimeout(run_inline_js, 100);
     } else if (!root._bokeh_failed_load) {
       console.log("Bokeh: BokehJS failed to load within specified timeout.");
       root._bokeh_failed_load = true;
     } else if (force !== true) {
-      const cell = $(document.getElementById("a6533e86-d162-458e-a3d6-c92e43c2aa5b")).parents('.cell').data().cell;
+      const cell = $(document.getElementById("d0995700-f617-4bba-a215-974b70a7f14a")).parents('.cell').data().cell;
       cell.output_area.append_execute_result(NB_LOAD_WARNING)
     }
   }
@@ -785,32 +785,39 @@ function(Bokeh) {
 </div>
 <div class="cell tag_remove-input tag_full-width docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html">
-  <div id="cbd1ab4a-c1b6-458f-b61f-3fe5934a4d60" data-root-id="p1504" style="display: contents;"></div>
-</div><script type="application/javascript">(function(root) {
-  function embed_document(root) {
-  const docs_json = {"d2a0f5bd-e74c-4579-8741-aadfd69077cf":{"version":"3.6.2","title":"Bokeh Application","roots":[{"type":"object","name":"Figure","id":"p1504","attributes":{"width":1050,"height":400,"x_range":{"type":"object","name":"FactorRange","id":"p1014","attributes":{"factors":["FH51","INV24","ISO34","RG18","SCONF","ALKBDE10","ACONF","CDIE20","BSR36","BH76","G2RC","RC21","MB16-43","Amino20x4","BHROT27","ISOL24","PCONF21","RSE43","ADIM6","SIE4x4","HAL59","BUT14DIOL","UPU23","BH76RC","CARBHB12","DC13","HEAVY28","PArel","G21EA","BHPERI","AHB21","IL16","W4-11","PNICO23","YBDE18","WATER27","MCONF","ICONF","S66","CHB6","G21IP"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p1506"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p1015"},"y_scale":{"type":"object","name":"LinearScale","id":"p1016"},"title":{"type":"object","name":"Title","id":"p1507","attributes":{"text":"DietGMTKN55 150 PNOF7s Mean Absolute Deviation"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p1047","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p1501","attributes":{"selected":{"type":"object","name":"Selection","id":"p1502","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p1503"},"data":{"type":"map","entries":[["subsets",["FH51","INV24","ISO34","RG18","SCONF","ALKBDE10","ACONF","CDIE20","BSR36","BH76","G2RC","RC21","MB16-43","Amino20x4","BHROT27","ISOL24","PCONF21","RSE43","ADIM6","SIE4x4","HAL59","BUT14DIOL","UPU23","BH76RC","CARBHB12","DC13","HEAVY28","PArel","G21EA","BHPERI","AHB21","IL16","W4-11","PNICO23","YBDE18","WATER27","MCONF","ICONF","S66","CHB6","G21IP"]],["counts",[3.055673225008782,1.3622742766700349,0.2658999899999106,0.39198607248243406,2.4756802749932834,6.46680222999899,0.6635859533340293,0.051592760002238336,9.592137584999023,7.4805579562397995,7.358740584999325,2.658152574996521,20.139375332362363,1.0785173866535966,0.8441557066888215,8.29160093000407,1.6785005167361036,2.1409202149962483,2.6550298600000453,6.218584374998131,2.275225013284127,1.103832553348665,4.0714452350424875,5.533721214999163,1.1889442162464197,11.354847150031726,-1.0,0.4851517812432181,23.711823953335273,11.760215138742524,2.618676642508263,0.342193935005767,35.956110816111725,1.6849716649971735,11.131294789998286,4.591077594997275,2.44653542878389,2.364119954984913,3.7739164220041372,1.1028727150050943,14.061470739999692]],["description",["Reaction energies in various (in-)organic systems","Inversion/racemisation barrier heights","Isomerisation energies of small and medium-sized organic molecules","Interaction energies in rare-gas complexes","Relative energies of sugar conformers","Dissociation energies in group-1 and -2 diatomics","Relative energies of alkane conformers","Double-bond isomerisation energies in cyclic systems","Bond-separation reactions of saturated hydrocarbons","Barrier heights of hydrogen transfer, heavy atom transfer, nucleophilic substitution, unimolecular and association reactions","Reaction energies of selected G2/97 systems","Fragmentations and rearrangements in radical cations","Decomposition energies of artificial molecules","Relative energies in amino acid conformers","Barrier heights for rotation around single bonds","Isomerisation energies of large organic molecules","Relative energies in tri- and tetrapeptide conformers","Radical-stabilisation energies","Interaction energies of n-alkane dimers","Self-interaction-error related problems","Binding energies in halogenated dimers (incl. halogen bonds)","Relative energies in butane-1,4-diol conformers","Relative energies between RNA-backbone conformers","Reaction energies of the BH76 set","Hydrogen-bonded complexes between carbene analogues and H2O, NH3, or HCl","13 difficult cases for DFT methods","Noncovalent interaction energies between heavy element hydrides","Relative energies in protonated isomers","Adiabatic electron affinities","Barrier heights of pericyclic reactions","Interaction energies in anion\u2013neutral dimers","Interaction energies in anion\u2013cation dimers","Total atomisation energies","Interaction energies in pnicogen-containing dimers","Bond-dissociation energies in ylides","Binding energies in (H2O)n, H+(H2O)n and OH-(H2O)n","Relative energies in melatonin conformers","Relative energies in conformers of inorganic systems","Binding energies of noncovalently bound dimers","Interaction energies in cation\u2013neutral dimers","Adiabatic ionisation potentials"]]]}}},"view":{"type":"object","name":"CDSView","id":"p1048","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p1049"}}},"glyph":{"type":"object","name":"VBar","id":"p1044","attributes":{"x":{"type":"field","field":"subsets"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"field","field":"counts","transform":{"type":"object","name":"LinearColorMapper","id":"p1040","attributes":{"palette":["#006837","#1a9850","#66bd63","#a6d96a","#d9ef8b","#ffffbf","#fee08b","#fdae61","#f46d43","#d73027","#a50026"],"low":-1.0,"high":35.956110816111725}}}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p1045","attributes":{"x":{"type":"field","field":"subsets"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"counts","transform":{"id":"p1040"}},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p1046","attributes":{"x":{"type":"field","field":"subsets"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"counts"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"counts","transform":{"id":"p1040"}},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p1013","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p1027"},{"type":"object","name":"WheelZoomTool","id":"p1028","attributes":{"renderers":"auto"}},{"type":"object","name":"BoxZoomTool","id":"p1029","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p1030","attributes":{"syncable":false,"line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5,"level":"overlay","visible":false,"left":{"type":"number","value":"nan"},"right":{"type":"number","value":"nan"},"top":{"type":"number","value":"nan"},"bottom":{"type":"number","value":"nan"},"left_units":"canvas","right_units":"canvas","top_units":"canvas","bottom_units":"canvas","handles":{"type":"object","name":"BoxInteractionHandles","id":"p1036","attributes":{"all":{"type":"object","name":"AreaVisuals","id":"p1035","attributes":{"fill_color":"white","hover_fill_color":"lightgray"}}}}}}}},{"type":"object","name":"SaveTool","id":"p1037"},{"type":"object","name":"ResetTool","id":"p1038"},{"type":"object","name":"HelpTool","id":"p1039"},{"type":"object","name":"HoverTool","id":"p1050","attributes":{"renderers":"auto","tooltips":[["Description","@description"],["MAD","@counts"]]}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p1022","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p1023","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p1024"},"axis_label":"MAD (kcal/mol)","major_label_policy":{"type":"object","name":"AllLabels","id":"p1025"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p1017","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p1018"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p1019"},"axis_label":"Sets","major_label_orientation":1.5707963267948966,"major_label_policy":{"type":"object","name":"AllLabels","id":"p1020"}}}],"center":[{"type":"object","name":"Grid","id":"p1021","attributes":{"axis":{"id":"p1017"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p1026","attributes":{"dimension":1,"axis":{"id":"p1022"}}}]}}]}};
-  const render_items = [{"docid":"d2a0f5bd-e74c-4579-8741-aadfd69077cf","roots":{"p1504":"cbd1ab4a-c1b6-458f-b61f-3fe5934a4d60"},"root_ids":["p1504"]}];
-  void root.Bokeh.embed.embed_items_notebook(docs_json, render_items);
-  }
-  if (root.Bokeh !== undefined) {
-    embed_document(root);
-  } else {
-    let attempts = 0;
-    const timer = setInterval(function(root) {
-      if (root.Bokeh !== undefined) {
-        clearInterval(timer);
-        embed_document(root);
-      } else {
-        attempts++;
-        if (attempts > 150) {
-          clearInterval(timer);
-          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
-        }
-      }
-    }, 10, root)
-  }
-})(window);</script></div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span><span class="w"> </span><span class="nn">bokeh.transform</span><span class="w"> </span><span class="kn">import</span> <span class="n">linear_cmap</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">subsets</span> <span class="o">=</span> <span class="n">get_Sets</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="n">counts</span> <span class="o">=</span> <span class="n">get_MADs</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">description</span> <span class="o">=</span> <span class="n">get_Descriptions</span><span class="p">(</span><span class="n">subsets</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="n">source</span> <span class="o">=</span> <span class="n">ColumnDataSource</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">subsets</span><span class="o">=</span><span class="n">subsets</span><span class="p">,</span> <span class="n">counts</span><span class="o">=</span><span class="n">counts</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">))</span>
+
+<span class="nn">Cell In[2], line 7,</span> in <span class="ni">get_MADs</span><span class="nt">(data)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="k">for</span> <span class="n">system</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="nb">set</span><span class="p">]:</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>         <span class="n">ADs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="nb">set</span><span class="p">][</span><span class="n">system</span><span class="p">][</span><span class="s2">&quot;AD&quot;</span><span class="p">])</span>
+<span class="ne">----&gt; </span><span class="mi">7</span>     <span class="n">MADs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">ADs</span><span class="p">))</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="k">return</span> <span class="n">MADs</span>
+
+<span class="nn">File ~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3860,</span> in <span class="ni">mean</span><span class="nt">(a, axis, dtype, out, keepdims, where)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3857</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">3858</span>         <span class="k">return</span> <span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">3860</span> <span class="k">return</span> <span class="n">_methods</span><span class="o">.</span><span class="n">_mean</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">3861</span>                       <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/_methods.py:135,</span> in <span class="ni">_mean</span><span class="nt">(a, axis, dtype, out, keepdims, where)</span>
+<span class="g g-Whitespace">    </span><span class="mi">132</span>         <span class="n">dtype</span> <span class="o">=</span> <span class="n">mu</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="s1">&#39;f4&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">133</span>         <span class="n">is_float16_result</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ne">--&gt; </span><span class="mi">135</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">umr_sum</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="n">keepdims</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">where</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ret</span><span class="p">,</span> <span class="n">mu</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>     <span class="n">ret</span> <span class="o">=</span> <span class="n">um</span><span class="o">.</span><span class="n">true_divide</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span>             <span class="n">ret</span><span class="p">,</span> <span class="n">rcount</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">ret</span><span class="p">,</span> <span class="n">casting</span><span class="o">=</span><span class="s1">&#39;unsafe&#39;</span><span class="p">,</span> <span class="n">subok</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="ne">TypeError</span>: the resolved dtypes are not compatible with add.reduce. Resolved (dtype(&#39;&lt;U32&#39;), dtype(&#39;&lt;U32&#39;), dtype(&#39;&lt;U64&#39;))
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell tag_remove-input docutils container">
 </div>

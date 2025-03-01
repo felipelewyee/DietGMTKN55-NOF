@@ -1,0 +1,96 @@
+Traceback (most recent call last):
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+    ~~~~~~~~~^
+        nb,
+        ^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/asyncio/base_events.py", line 720, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+        cell, index, execution_count=self.code_cells_executed + 1
+    )
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/jfhlewyee/anaconda3/envs/jb/lib/python3.13/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+import math
+from bokeh.plotting import figure, show
+from bokeh.models import ColumnDataSource, HoverTool, TapTool
+from bokeh.palettes import RdYlGn
+from bokeh.transform import linear_cmap
+
+subsets = get_Sets(data)
+counts = get_MADs(data)
+description = get_Descriptions(subsets)
+
+source = ColumnDataSource(data=dict(subsets=subsets, counts=counts, description=description))
+
+p = figure(x_range=subsets, width=1050, height=400, title="DietGMTKN55 {} {} Mean Absolute Deviation".format(set_name, nof))
+
+p.xaxis.major_label_orientation = math.pi/2
+
+p.vbar(x='subsets', top='counts', width=0.9, source=source,
+       fill_color=linear_cmap('counts', palette=RdYlGn[11], low=min(counts), high=max(counts)), 
+        line_color="white")
+
+p.xaxis.axis_label = "Sets"
+p.yaxis.axis_label = "MAD (kcal/mol)"
+p.xgrid.grid_line_color = None
+
+#p.add_tools(TapTool())
+hover = HoverTool(tooltips=[
+    ("Description", "@description"),
+    ("MAD", "@counts"),
+])
+p.add_tools(hover)
+
+show(p)
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mTypeError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[4], line 8[0m
+[1;32m      5[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mbokeh[39;00m[38;5;21;01m.[39;00m[38;5;21;01mtransform[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m linear_cmap
+[1;32m      7[0m subsets [38;5;241m=[39m get_Sets(data)
+[0;32m----> 8[0m counts [38;5;241m=[39m [43mget_MADs[49m[43m([49m[43mdata[49m[43m)[49m
+[1;32m      9[0m description [38;5;241m=[39m get_Descriptions(subsets)
+[1;32m     11[0m source [38;5;241m=[39m ColumnDataSource(data[38;5;241m=[39m[38;5;28mdict[39m(subsets[38;5;241m=[39msubsets, counts[38;5;241m=[39mcounts, description[38;5;241m=[39mdescription))
+
+Cell [0;32mIn[2], line 7[0m, in [0;36mget_MADs[0;34m(data)[0m
+[1;32m      5[0m     [38;5;28;01mfor[39;00m system [38;5;129;01min[39;00m data[[38;5;28mset[39m]:
+[1;32m      6[0m         ADs[38;5;241m.[39mappend(data[[38;5;28mset[39m][system][[38;5;124m"[39m[38;5;124mAD[39m[38;5;124m"[39m])
+[0;32m----> 7[0m     MADs[38;5;241m.[39mappend([43mnp[49m[38;5;241;43m.[39;49m[43mmean[49m[43m([49m[43mADs[49m[43m)[49m)
+[1;32m      8[0m [38;5;28;01mreturn[39;00m MADs
+
+File [0;32m~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3860[0m, in [0;36mmean[0;34m(a, axis, dtype, out, keepdims, where)[0m
+[1;32m   3857[0m     [38;5;28;01melse[39;00m:
+[1;32m   3858[0m         [38;5;28;01mreturn[39;00m mean(axis[38;5;241m=[39maxis, dtype[38;5;241m=[39mdtype, out[38;5;241m=[39mout, [38;5;241m*[39m[38;5;241m*[39mkwargs)
+[0;32m-> 3860[0m [38;5;28;01mreturn[39;00m [43m_methods[49m[38;5;241;43m.[39;49m[43m_mean[49m[43m([49m[43ma[49m[43m,[49m[43m [49m[43maxis[49m[38;5;241;43m=[39;49m[43maxis[49m[43m,[49m[43m [49m[43mdtype[49m[38;5;241;43m=[39;49m[43mdtype[49m[43m,[49m
+[1;32m   3861[0m [43m                      [49m[43mout[49m[38;5;241;43m=[39;49m[43mout[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
+
+File [0;32m~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/_methods.py:135[0m, in [0;36m_mean[0;34m(a, axis, dtype, out, keepdims, where)[0m
+[1;32m    132[0m         dtype [38;5;241m=[39m mu[38;5;241m.[39mdtype([38;5;124m'[39m[38;5;124mf4[39m[38;5;124m'[39m)
+[1;32m    133[0m         is_float16_result [38;5;241m=[39m [38;5;28;01mTrue[39;00m
+[0;32m--> 135[0m ret [38;5;241m=[39m [43mumr_sum[49m[43m([49m[43marr[49m[43m,[49m[43m [49m[43maxis[49m[43m,[49m[43m [49m[43mdtype[49m[43m,[49m[43m [49m[43mout[49m[43m,[49m[43m [49m[43mkeepdims[49m[43m,[49m[43m [49m[43mwhere[49m[38;5;241;43m=[39;49m[43mwhere[49m[43m)[49m
+[1;32m    136[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(ret, mu[38;5;241m.[39mndarray):
+[1;32m    137[0m     ret [38;5;241m=[39m um[38;5;241m.[39mtrue_divide(
+[1;32m    138[0m             ret, rcount, out[38;5;241m=[39mret, casting[38;5;241m=[39m[38;5;124m'[39m[38;5;124munsafe[39m[38;5;124m'[39m, subok[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
+
+[0;31mTypeError[0m: the resolved dtypes are not compatible with add.reduce. Resolved (dtype('<U18'), dtype('<U18'), dtype('<U36'))
+
