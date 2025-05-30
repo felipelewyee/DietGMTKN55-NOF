@@ -94,38 +94,22 @@ show(p)
 
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mTypeError[0m                                 Traceback (most recent call last)
-Cell [0;32mIn[4], line 23[0m
-[1;32m     21[0m         file [38;5;241m=[39m [38;5;28mopen[39m([38;5;124m'[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m-[39m[38;5;132;01m{}[39;00m[38;5;124m.yaml[39m[38;5;124m'[39m[38;5;241m.[39mformat(set_name,nof,ncwo), [38;5;124m'[39m[38;5;124mr[39m[38;5;124m'[39m)
-[1;32m     22[0m     yaml_data [38;5;241m=[39m yaml[38;5;241m.[39msafe_load(file)
-[0;32m---> 23[0m     counts [38;5;241m=[39m [43mget_MADs[49m[43m([49m[43myaml_data[49m[43m)[49m
-[1;32m     24[0m     data[nof] [38;5;241m=[39m counts
-[1;32m     26[0m descriptions [38;5;241m=[39m {[38;5;124m'[39m[38;5;124msubsets[39m[38;5;124m'[39m : subsets,
-[1;32m     27[0m         [38;5;124m'[39m[38;5;124mPNOF5[39m[38;5;124m'[39m   : description,
-[1;32m     28[0m         [38;5;124m'[39m[38;5;124mPNOF7s[39m[38;5;124m'[39m  : description,
-[1;32m     29[0m         [38;5;124m'[39m[38;5;124mPNOF7[39m[38;5;124m'[39m   : description,
-[1;32m     30[0m         [38;5;124m'[39m[38;5;124mGNOF[39m[38;5;124m'[39m    : description,
-[1;32m     31[0m         [38;5;124m'[39m[38;5;124mGNOFm[39m[38;5;124m'[39m   : description}
+[0;31mFileNotFoundError[0m                         Traceback (most recent call last)
+Cell [0;32mIn[4], line 9[0m
+[1;32m      6[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mbokeh[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpalettes[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m Category10
+[1;32m      8[0m nof [38;5;241m=[39m [38;5;124m"[39m[38;5;124mGNOF[39m[38;5;124m"[39m
+[0;32m----> 9[0m file [38;5;241m=[39m [38;5;28;43mopen[39;49m[43m([49m[38;5;124;43m'[39;49m[38;5;132;43;01m{}[39;49;00m[38;5;124;43m-[39;49m[38;5;132;43;01m{}[39;49;00m[38;5;124;43m-[39;49m[38;5;132;43;01m{}[39;49;00m[38;5;124;43m.yaml[39;49m[38;5;124;43m'[39;49m[38;5;241;43m.[39;49m[43mformat[49m[43m([49m[43mset_name[49m[43m,[49m[43mnof[49m[43m,[49m[43mncwo[49m[43m)[49m[43m,[49m[43m [49m[38;5;124;43m'[39;49m[38;5;124;43mr[39;49m[38;5;124;43m'[39;49m[43m)[49m
+[1;32m     10[0m data [38;5;241m=[39m yaml[38;5;241m.[39msafe_load(file)
+[1;32m     11[0m subsets [38;5;241m=[39m get_Sets(data)
 
-Cell [0;32mIn[2], line 7[0m, in [0;36mget_MADs[0;34m(data)[0m
-[1;32m      5[0m     [38;5;28;01mfor[39;00m system [38;5;129;01min[39;00m data[[38;5;28mset[39m]:
-[1;32m      6[0m         ADs[38;5;241m.[39mappend(data[[38;5;28mset[39m][system][[38;5;124m"[39m[38;5;124mAD[39m[38;5;124m"[39m])
-[0;32m----> 7[0m     MADs[38;5;241m.[39mappend([43mnp[49m[38;5;241;43m.[39;49m[43mmean[49m[43m([49m[43mADs[49m[43m)[49m)
-[1;32m      8[0m [38;5;28;01mreturn[39;00m MADs
+File [0;32m~/anaconda3/envs/jb/lib/python3.13/site-packages/IPython/core/interactiveshell.py:324[0m, in [0;36m_modified_open[0;34m(file, *args, **kwargs)[0m
+[1;32m    317[0m [38;5;28;01mif[39;00m file [38;5;129;01min[39;00m {[38;5;241m0[39m, [38;5;241m1[39m, [38;5;241m2[39m}:
+[1;32m    318[0m     [38;5;28;01mraise[39;00m [38;5;167;01mValueError[39;00m(
+[1;32m    319[0m         [38;5;124mf[39m[38;5;124m"[39m[38;5;124mIPython won[39m[38;5;124m'[39m[38;5;124mt let you open fd=[39m[38;5;132;01m{[39;00mfile[38;5;132;01m}[39;00m[38;5;124m by default [39m[38;5;124m"[39m
+[1;32m    320[0m         [38;5;124m"[39m[38;5;124mas it is likely to crash IPython. If you know what you are doing, [39m[38;5;124m"[39m
+[1;32m    321[0m         [38;5;124m"[39m[38;5;124myou can use builtins[39m[38;5;124m'[39m[38;5;124m open.[39m[38;5;124m"[39m
+[1;32m    322[0m     )
+[0;32m--> 324[0m [38;5;28;01mreturn[39;00m [43mio_open[49m[43m([49m[43mfile[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[43margs[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
 
-File [0;32m~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/fromnumeric.py:3860[0m, in [0;36mmean[0;34m(a, axis, dtype, out, keepdims, where)[0m
-[1;32m   3857[0m     [38;5;28;01melse[39;00m:
-[1;32m   3858[0m         [38;5;28;01mreturn[39;00m mean(axis[38;5;241m=[39maxis, dtype[38;5;241m=[39mdtype, out[38;5;241m=[39mout, [38;5;241m*[39m[38;5;241m*[39mkwargs)
-[0;32m-> 3860[0m [38;5;28;01mreturn[39;00m [43m_methods[49m[38;5;241;43m.[39;49m[43m_mean[49m[43m([49m[43ma[49m[43m,[49m[43m [49m[43maxis[49m[38;5;241;43m=[39;49m[43maxis[49m[43m,[49m[43m [49m[43mdtype[49m[38;5;241;43m=[39;49m[43mdtype[49m[43m,[49m
-[1;32m   3861[0m [43m                      [49m[43mout[49m[38;5;241;43m=[39;49m[43mout[49m[43m,[49m[43m [49m[38;5;241;43m*[39;49m[38;5;241;43m*[39;49m[43mkwargs[49m[43m)[49m
-
-File [0;32m~/anaconda3/envs/jb/lib/python3.13/site-packages/numpy/_core/_methods.py:135[0m, in [0;36m_mean[0;34m(a, axis, dtype, out, keepdims, where)[0m
-[1;32m    132[0m         dtype [38;5;241m=[39m mu[38;5;241m.[39mdtype([38;5;124m'[39m[38;5;124mf4[39m[38;5;124m'[39m)
-[1;32m    133[0m         is_float16_result [38;5;241m=[39m [38;5;28;01mTrue[39;00m
-[0;32m--> 135[0m ret [38;5;241m=[39m [43mumr_sum[49m[43m([49m[43marr[49m[43m,[49m[43m [49m[43maxis[49m[43m,[49m[43m [49m[43mdtype[49m[43m,[49m[43m [49m[43mout[49m[43m,[49m[43m [49m[43mkeepdims[49m[43m,[49m[43m [49m[43mwhere[49m[38;5;241;43m=[39;49m[43mwhere[49m[43m)[49m
-[1;32m    136[0m [38;5;28;01mif[39;00m [38;5;28misinstance[39m(ret, mu[38;5;241m.[39mndarray):
-[1;32m    137[0m     ret [38;5;241m=[39m um[38;5;241m.[39mtrue_divide(
-[1;32m    138[0m             ret, rcount, out[38;5;241m=[39mret, casting[38;5;241m=[39m[38;5;124m'[39m[38;5;124munsafe[39m[38;5;124m'[39m, subok[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
-
-[0;31mTypeError[0m: the resolved dtypes are not compatible with add.reduce. Resolved (dtype('<U32'), dtype('<U32'), dtype('<U64'))
+[0;31mFileNotFoundError[0m: [Errno 2] No such file or directory: '150-GNOF-ncwo1.yaml'
 
