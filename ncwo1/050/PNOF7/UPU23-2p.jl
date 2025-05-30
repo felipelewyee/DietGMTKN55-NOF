@@ -72,7 +72,7 @@ p.ipnof = 7
 p.RI = true
 p.maxit = 40
 
-p.maxloop = 10
+p.maxloop = 30
 
 DoNOF.set_ncwo(p,1)
 

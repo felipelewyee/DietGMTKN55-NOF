@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/software/eb2024/easybuild/extra/bin/software_subdir.py", line 55, in <module>
+    distro = platform.linux_distribution()[0].replace(" ", "").lower()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'platform' has no attribute 'linux_distribution'
+slurmstepd: error: *** STEP 159780.0 ON nagpu01 CANCELLED AT 2025-05-24T09:33:03 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 159780 ON nagpu01 CANCELLED AT 2025-05-24T09:33:03 DUE TO TIME LIMIT ***

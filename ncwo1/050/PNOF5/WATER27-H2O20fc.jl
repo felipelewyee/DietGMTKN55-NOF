@@ -76,6 +76,7 @@ p.maxit = 40
 p.maxloop = 10
 
 DoNOF.set_ncwo(p,1)
+p.alpha = 0.003
 
 C = DoNOF.read_C(title=p.title)
 n = DoNOF.read_n(title=p.title)
