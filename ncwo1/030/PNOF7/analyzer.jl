@@ -93,10 +93,10 @@ for (set_name, set) in data
             mol_data[molecule_name] = prop
         end
         species["E_Ref"] = system["Energy"]
-        species["Energy"] = dE_NOF
+        species["Energy"] = dE_NOF*627.5
         species["Species"] = mol_data
-	AD = abs(system["Energy"] - dE_NOF*627.15)
-        APD = abs((system["Energy"] - dE_NOF*627.15)/system["Energy"])*100
+	AD = abs(system["Energy"] - dE_NOF*627.5)
+        APD = abs((system["Energy"] - dE_NOF*627.5)/system["Energy"])*100
 	if(AD < 100)
             global WTMAD2 += system["Weight"]*AD
         end
@@ -104,7 +104,7 @@ for (set_name, set) in data
         species["APD"] = APD
         species["Weight"] = system["Weight"]
         species["WTMAD2"] = system["Weight"]*AD/nsystems
-	@printf("  dE NOF: %.4f   AD: %.1f    Weight: %.1f  Contrib: %.1f\n",dE_NOF*627.15, AD, system["Weight"], system["Weight"]*AD/nsystems)
+	@printf("  dE NOF: %.4f   AD: %.1f    Weight: %.1f  Contrib: %.1f\n",dE_NOF*627.5, AD, system["Weight"], system["Weight"]*AD/nsystems)
         systems[system_name] = species
     results[set_name] = systems
     end
@@ -130,8 +130,8 @@ for (set_name, set) in data
 	    E_NOF = get_nof_E(nof, set_name*"-"*string(molecule_name))
             dE_NOF += molecule["Count"]*E_NOF
         end
-	AD = abs(system["Energy"] - dE_NOF*627.15)
-	APD = abs((system["Energy"] - dE_NOF*627.15)/system["Energy"]) * 100
+	AD = abs(system["Energy"] - dE_NOF*627.5)
+	APD = abs((system["Energy"] - dE_NOF*627.5)/system["Energy"]) * 100
         push!(ADs, AD)
         push!(APDs, APD)
 	push!(WTMAD2s_set, system["Weight"]*AD)
