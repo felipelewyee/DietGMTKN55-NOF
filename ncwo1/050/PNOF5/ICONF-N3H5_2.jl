@@ -1,0 +1,31 @@
+using DoNOF
+
+mol = """
+0 1
+N    -0.17184   -0.55707    0.30027
+N     1.20115   -0.58382   -0.10375
+N    -0.75672    0.76299    0.15936
+H    -1.28143    0.84593   -0.71555
+H    -1.41635    0.87959    0.92732
+H     1.34068    0.03521   -0.91080
+H     1.72996   -0.17035    0.66352
+H    -0.64546   -1.21246   -0.32037
+"""
+
+bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+
+p.title = "ICONF-N3H5_2"
+
+p.ipnof = 5
+
+p.RI = true
+p.maxit = 40
+
+p.maxloop = 10
+
+DoNOF.set_ncwo(p,1)
+
+C = DoNOF.read_C(title=p.title)
+n = DoNOF.read_n(title=p.title)
+
+DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)

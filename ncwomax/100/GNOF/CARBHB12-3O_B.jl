@@ -1,0 +1,26 @@
+using DoNOF
+
+mol = """
+0 1
+Si    0.00000    0.00000   -0.69030
+H     1.09013    0.00000    0.34515
+H    -1.09013    0.00000    0.34515
+"""
+
+bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+
+p.title = "CARBHB12-3O_B"
+
+p.ipnof = 8
+
+p.RI = true
+p.maxit = 40
+
+p.maxloop = 10
+
+#DoNOF.set_ncwo(p,1)
+
+C = DoNOF.read_C(title=p.title)
+n = DoNOF.read_n(title=p.title)
+
+DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)

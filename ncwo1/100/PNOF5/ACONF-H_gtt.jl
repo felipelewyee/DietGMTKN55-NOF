@@ -1,0 +1,43 @@
+using CUDA, KernelAbstractions, cuTENSOR, DoNOF
+
+mol = """
+0 1
+C     2.54531    0.85407   -0.21573
+C     2.06064   -0.47229    0.35838
+C     0.69503   -0.90008   -0.17295
+C    -0.44024    0.04445    0.20260
+C    -1.80340   -0.45885   -0.25475
+C    -2.93211    0.49429    0.11555
+H     1.89881    1.67901    0.07790
+H     2.56389    0.81727   -1.30551
+H     3.55216    1.08742    0.12706
+H     2.01475   -0.40526    1.44799
+H     2.79093   -1.24990    0.12797
+H     0.45906   -1.89773    0.20575
+H     0.74413   -0.98728   -1.26245
+H    -0.26612    1.03216   -0.23002
+H    -0.45166    0.17993    1.28865
+H    -1.98930   -1.44066    0.18647
+H    -1.78494   -0.60620   -1.33705
+H    -3.89999    0.12103   -0.21543
+H    -2.77733    1.47243   -0.33959
+H    -2.97964    0.63617    1.19515
+"""
+
+bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+
+p.title = "ACONF-H_gtt"
+
+p.ipnof = 5
+
+p.RI = true
+p.maxit = 40
+
+p.maxloop = 10
+
+DoNOF.set_ncwo(p,1)
+
+C = DoNOF.read_C(title=p.title)
+n = DoNOF.read_n(title=p.title)
+
+DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)
