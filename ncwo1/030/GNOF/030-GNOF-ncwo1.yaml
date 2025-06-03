@@ -237,14 +237,14 @@ Amino20x4:
         Count: -1
       GLU_xad:
         Charge: 0
-        E_NOF: -720.4251182
+        E_NOF: -721.8118617
         Multiplicity: 0
         Count: 1
-    APD: 60.574314609003366
-    Energy: 8.375556250005616
+    APD: 16622.35410276022
+    Energy: -861.805989999973
     E_Ref: 5.216
-    AD: 3.1595562500056156
-    WTMAD2: 2.454975206254363
+    AD: 867.021989999973
+    WTMAD2: 673.6760862299791
     Weight: 23.31
 BHROT27:
   16:
@@ -312,7 +312,7 @@ HAL59:
     Species:
       28_CH3I-benB:
         Charge: 0
-        E_NOF: -2478.7550319
+        E_NOF: -2478.7867897
         Multiplicity: 0
         Count: 1
       28_CH3I-benAB:
@@ -325,11 +325,11 @@ HAL59:
         E_NOF: -231.526483
         Multiplicity: 0
         Count: 1
-    APD: 20157.01572579815
-    Energy: 502.3739899997941
+    APD: 19353.466552413
+    Energy: 482.4459704998424
     E_Ref: 2.48
-    AD: 499.8939899997941
-    WTMAD2: 206.28958653991504
+    AD: 479.9659704998424
+    WTMAD2: 198.06595715960165
     Weight: 12.38
   40:
     Species:

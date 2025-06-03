@@ -232,7 +232,7 @@ Amino20x4:
     Species:
       GLU_xbi:
         Charge: 0
-        E_NOF: -719.9636286
+        E_NOF: -720.7334039
         Multiplicity: 0
         Count: -1
       GLU_xad:
@@ -240,11 +240,11 @@ Amino20x4:
         E_NOF: -720.7315144
         Multiplicity: 0
         Count: 1
-    APD: 9337.889944402377
-    Energy: -481.848339500028
+    APD: 77.26876437946625
+    Energy: 1.1856612499670405
     E_Ref: 5.216
-    AD: 487.064339500028
-    WTMAD2: 378.44899179152173
+    AD: 4.03033875003296
+    WTMAD2: 3.131573208775609
     Weight: 23.31
 BHROT27:
   16:
